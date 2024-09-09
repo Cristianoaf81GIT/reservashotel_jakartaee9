@@ -2,6 +2,7 @@ package br.com.cristiano.reservashotel.models;
 
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.lang.String;
 import java.util.Objects;
 import jakarta.persistence.Column;
@@ -12,6 +13,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
 
 /**
@@ -30,6 +32,16 @@ public abstract class Pessoa implements Serializable {
 	private String telefone;
 	private String email;
 	private Endereco endereco;
+	private Collection<Reserva> reservas;
+
+	@OneToMany(mappedBy = "cliente")
+	public Collection<Reserva> getReservas() {
+		return reservas;
+	}
+
+	public void setReservas(Collection<Reserva> reservas) {
+		this.reservas = reservas;
+	}
 
 	@Embedded
 	public Endereco getEndereco() {

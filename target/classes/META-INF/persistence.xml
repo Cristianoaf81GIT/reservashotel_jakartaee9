@@ -6,6 +6,8 @@
    <persistence-unit name="ReservaHotel">
       <class>br.com.cristiano.reservashotel.models.Pessoa</class>
       <class>br.com.cristiano.reservashotel.models.PessoaJuridica</class>
-         <class>br.com.cristiano.reservashotel.models.Endereco</class>
+      <class>br.com.cristiano.reservashotel.models.Endereco</class>
+      <class>br.com.cristiano.reservashotel.models.Reserva</class>
+      <class>br.com.cristiano.reservashotel.models.Diaria</class>
    </persistence-unit>
 </persistence>
