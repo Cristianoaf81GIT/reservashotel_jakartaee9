@@ -1,14 +1,17 @@
 package br.com.cristiano.reservashotel.models;
 
+import java.util.Collection;
 import java.util.Date;
 import java.io.Serializable;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Reserva implements Serializable {
@@ -19,6 +22,7 @@ public class Reserva implements Serializable {
     private Date data;
     private double valor;
     private Pessoa cliente;
+    private Collection<DiariaReservada> diarias;
     
     @Id
     @GeneratedValue
@@ -54,6 +58,15 @@ public class Reserva implements Serializable {
     
     public void setCliente(Pessoa cliente) {
         this.cliente = cliente;
+    }   
+    
+    @OneToMany(mappedBy = "reserva", fetch = FetchType.EAGER)
+    public Collection<DiariaReservada> getDiarias() {
+        return this.diarias;
+    }
+
+    public void setDiarias(Collection<DiariaReservada> diarias) {
+        this.diarias = diarias;
     }
 
     @Override
@@ -66,6 +79,7 @@ public class Reserva implements Serializable {
         temp = Double.doubleToLongBits(valor);
         result = prime * result + (int) (temp ^ (temp >>> 32));
         result = prime * result + ((cliente == null) ? 0 : cliente.hashCode());
+        result = prime * result + ((diarias == null) ? 0 : diarias.hashCode());
         return result;
     }
 
@@ -92,10 +106,20 @@ public class Reserva implements Serializable {
                 return false;
         } else if (!cliente.equals(other.cliente))
             return false;
+        if (diarias == null) {
+            if (other.diarias != null)
+                return false;
+        } else if (!diarias.equals(other.diarias))
+            return false;
         return true;
     }
 
-  
+    @Override
+    public String toString() {
+        return "Reserva [codigo=" + codigo + ", data=" + data + ", valor=" + valor + ", cliente=" + cliente
+                + ", diarias=" + diarias + "]";
+    }
+    
     
 }
 
