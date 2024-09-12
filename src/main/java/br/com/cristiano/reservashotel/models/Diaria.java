@@ -63,6 +63,7 @@ public class Diaria implements Serializable {
         int result = 1;
         result = prime * result + codigo;
         result = prime * result + ((data == null) ? 0 : data.hashCode());
+        result = prime * result + ((hospedes == null) ? 0 : hospedes.hashCode());
         return result;
     }
     
@@ -81,6 +82,11 @@ public class Diaria implements Serializable {
             if (other.data != null)
                 return false;
         } else if (!data.equals(other.data))
+            return false;
+        if (hospedes == null) {
+            if (other.hospedes != null)
+                return false;
+        } else if(!hospedes.equals(other.hospedes))
             return false;
         return true;
     } 

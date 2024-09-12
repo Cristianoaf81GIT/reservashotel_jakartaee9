@@ -3,8 +3,7 @@ package br.com.cristiano.reservashotel.models;
 import java.util.Collection;
 import java.util.Date;
 import java.io.Serializable;
-
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -60,7 +59,11 @@ public class Reserva implements Serializable {
         this.cliente = cliente;
     }   
     
-    @OneToMany(mappedBy = "reserva", fetch = FetchType.EAGER)
+    @OneToMany(
+        mappedBy = "reserva", 
+        fetch = FetchType.EAGER, 
+        cascade = CascadeType.ALL
+    )
     public Collection<DiariaReservada> getDiarias() {
         return this.diarias;
     }
