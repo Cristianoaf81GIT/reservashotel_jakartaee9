@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <installation xmlns="urn:jboss:galleon:provisioned-state:3.0">
-    <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+    <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
         <packages>
             <package name="appclient"/>
             <package name="bin.jdrtools"/>
@@ -246,7 +246,9 @@
             <package name="javax.validation.api"/>
             <package name="jakarta.validation.api"/>
             <package name="org.jboss.as.connector"/>
-            <package name="org.jboss.resteasy.resteasy-cdi"/>
+            <package name="org.jboss.resteasy.resteasy-jaxb-provider"/>
+            <package name="org.apache.commons.io"/>
+            <package name="org.apache.james.mime4j"/>
             <package name="javax.ws.rs.api"/>
             <package name="com.ibm.async.asyncutil"/>
             <package name="org.jboss.resteasy.resteasy-core"/>
@@ -256,24 +258,24 @@
             <package name="org.apache.commons.codec"/>
             <package name="org.jboss.resteasy.resteasy-client"/>
             <package name="jakarta.ws.rs.api"/>
-            <package name="org.jboss.resteasy.resteasy-validator-provider"/>
-            <package name="com.fasterxml.jackson.core.jackson-annotations"/>
-            <package name="com.fasterxml.jackson.core.jackson-databind"/>
-            <package name="com.fasterxml.jackson.datatype.jackson-datatype-jsr310"/>
-            <package name="org.jboss.resteasy.resteasy-jaxrs"/>
-            <package name="org.jboss.resteasy.resteasy-json-p-provider"/>
-            <package name="org.bouncycastle.bcmail"/>
-            <package name="org.apache.commons.io"/>
-            <package name="org.apache.james.mime4j"/>
             <package name="javax.mail.api"/>
             <package name="org.eclipse.angus.mail"/>
             <package name="jakarta.mail.api"/>
-            <package name="org.jboss.resteasy.resteasy-crypto"/>
-            <package name="org.jboss.resteasy.resteasy-jaxb-provider"/>
-            <package name="org.jboss.resteasy.resteasy-spring"/>
-            <package name="org.jboss.resteasy.resteasy-tracing-api"/>
             <package name="org.jboss.resteasy.resteasy-multipart-provider"/>
+            <package name="org.jboss.resteasy.resteasy-tracing-api"/>
+            <package name="com.fasterxml.jackson.core.jackson-annotations"/>
+            <package name="com.fasterxml.jackson.core.jackson-databind"/>
+            <package name="com.fasterxml.jackson.datatype.jackson-datatype-jsr310"/>
             <package name="org.jboss.resteasy.resteasy-json-binding-provider"/>
+            <package name="org.jboss.resteasy.resteasy-spring"/>
+            <package name="org.bouncycastle.bcmail"/>
+            <package name="org.jboss.resteasy.resteasy-crypto"/>
+            <package name="org.jboss.resteasy.resteasy-json-p-provider"/>
+            <package name="org.jboss.resteasy.resteasy-cdi"/>
+            <package name="org.jboss.resteasy.resteasy-validator-provider"/>
+            <package name="org.jboss.resteasy.resteasy-jaxrs"/>
+            <package name="com.fasterxml.jackson.datatype.jackson-datatype-jdk8"/>
+            <package name="org.jboss.resteasy.resteasy-atom-provider"/>
             <package name="org.jboss.resteasy.resteasy-jsapi"/>
             <package name="com.google.guava.failureaccess"/>
             <package name="com.google.guava"/>
@@ -281,26 +283,11 @@
             <package name="com.github.fge.msg-simple"/>
             <package name="com.github.fge.jackson-coreutils"/>
             <package name="com.github.fge.json-patch"/>
-            <package name="com.fasterxml.jackson.datatype.jackson-datatype-jdk8"/>
             <package name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider"/>
             <package name="com.fasterxml.jackson.jakarta.jackson-jakarta-json-provider"/>
             <package name="org.jboss.resteasy.resteasy-jackson2-provider"/>
-            <package name="org.jboss.resteasy.resteasy-atom-provider"/>
             <package name="org.jboss.as.jaxrs"/>
             <package name="org.wildfly.extension.bean-validation"/>
-            <package name="org.hibernate.validator.cdi"/>
-            <package name="org.jboss.as.jpa.spi"/>
-            <package name="org.jboss.as.jpa"/>
-            <package name="org.jboss.as.weld.common"/>
-            <package name="org.jboss.as.weld.spi"/>
-            <package name="org.jboss.as.weld.jpa"/>
-            <package name="org.jboss.ejb3"/>
-            <package name="org.wildfly.clustering.ejb.spi"/>
-            <package name="javax.jms.api"/>
-            <package name="jakarta.jms.api"/>
-            <package name="org.wildfly.http-client.ejb"/>
-            <package name="org.jboss.as.ejb3"/>
-            <package name="org.jboss.as.weld.ejb"/>
             <package name="org.jboss.ws.cxf.jbossws-cxf-client"/>
             <package name="org.jboss.xts"/>
             <package name="org.jboss.ws.cxf.jbossws-cxf-server"/>
@@ -327,6 +314,12 @@
             <package name="org.apache.commons.beanutils"/>
             <package name="org.jboss.jaxbintros"/>
             <package name="org.jboss.ws.common"/>
+            <package name="org.jboss.ejb3"/>
+            <package name="org.wildfly.clustering.ejb.spi"/>
+            <package name="javax.jms.api"/>
+            <package name="jakarta.jms.api"/>
+            <package name="org.wildfly.http-client.ejb"/>
+            <package name="org.jboss.as.ejb3"/>
             <package name="org.jboss.as.webservices"/>
             <package name="org.jboss.ws.spi"/>
             <package name="org.jboss.ws.jaxws-client"/>
@@ -339,20 +332,27 @@
             <package name="javax.wsdl4j.api"/>
             <package name="asm.asm"/>
             <package name="org.jboss.as.webservices.server.integration"/>
+            <package name="org.jboss.as.weld.common"/>
+            <package name="org.jboss.as.weld.spi"/>
             <package name="org.jboss.as.weld.webservices"/>
-            <package name="org.jboss.as.weld.beanvalidation"/>
+            <package name="org.jboss.as.weld.ejb"/>
+            <package name="org.jboss.as.jpa.spi"/>
+            <package name="org.jboss.as.jpa"/>
+            <package name="org.jboss.as.weld.jpa"/>
             <package name="org.jboss.as.weld.transactions"/>
+            <package name="org.jboss.as.weld.beanvalidation"/>
+            <package name="org.hibernate.validator.cdi"/>
             <package name="org.jboss.as.weld"/>
+            <package name="org.hibernate.search.orm"/>
+            <package name="org.hibernate.search.jipijapa-hibernatesearch"/>
+            <package name="org.hibernate.envers"/>
             <package name="net.bytebuddy"/>
             <package name="org.hibernate.infinispan"/>
             <package name="org.infinispan.hibernate-cache"/>
             <package name="org.hibernate.jipijapa-hibernate6"/>
-            <package name="org.hibernate.commons-annotations"/>
             <package name="org.antlr"/>
             <package name="org.hibernate"/>
-            <package name="org.hibernate.envers"/>
-            <package name="org.hibernate.search.orm"/>
-            <package name="org.hibernate.search.jipijapa-hibernatesearch"/>
+            <package name="org.hibernate.commons-annotations"/>
             <package name="org.hibernate.search.mapper.pojo"/>
             <package name="org.hibernate.search.engine"/>
             <package name="org.hibernate.search.mapper.orm"/>
@@ -537,7 +537,7 @@
             <package name="cleanup.domain.data.dir"/>
         </packages>
     </feature-pack>
-    <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+    <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
         <packages>
             <package name="io.smallrye.common.function"/>
             <package name="io.smallrye.common.expression"/>
@@ -620,10 +620,10 @@
             <package name="io.smallrye.common.annotation"/>
             <package name="io.smallrye.fault-tolerance"/>
             <package name="org.wildfly.microprofile.fault-tolerance-smallrye.deployment"/>
-            <package name="com.google.protobuf"/>
             <package name="io.opentelemetry.proto"/>
             <package name="org.wildfly.extension.opentelemetry-api"/>
             <package name="io.grpc"/>
+            <package name="com.google.protobuf"/>
             <package name="io.vertx.grpc-common"/>
             <package name="io.vertx.grpc-client"/>
             <package name="io.netty.netty-codec-http2"/>
@@ -703,7 +703,7 @@
             <layer model="standalone" name="web-clustering"/>
             <layer model="standalone" name="elytron-oidc-client"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -1934,7 +1934,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -1995,7 +1995,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.jpa">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.jpa:subsystem=jpa">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -2531,7 +2531,7 @@
             <prop name="config.merge-independent-branches" value="true"/>
             <prop name="--remove-existing-host-config" value=""/>
         </props>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="domain.interface">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}domain.interface:interface=management">
                     <param name="interface" value="management"/>
@@ -10083,7 +10083,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye,profile=default">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -10137,7 +10137,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.modcluster">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.modcluster:subsystem=modcluster,profile=ha">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -10661,7 +10661,7 @@
             <prop name="config.merge-independent-branches" value="true"/>
             <prop name="--remove-existing-host-config" value=""/>
         </props>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="host">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}host:host=secondary">
                     <param name="host" value="secondary"/>
@@ -11145,7 +11145,7 @@
             <layer model="standalone" name="microprofile-jwt"/>
             <layer model="standalone" name="internal-standalone-profile"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -13063,7 +13063,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -13152,7 +13152,7 @@
             <layer model="standalone" name="mod_cluster"/>
             <layer model="standalone" name="singleton-ha"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -15483,7 +15483,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -15501,7 +15501,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.jpa">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.jpa:subsystem=jpa">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -15635,7 +15635,7 @@
             <layer model="standalone" name="io"/>
             <layer model="standalone" name="undertow-load-balancer"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -16361,7 +16361,7 @@
             <layer model="standalone" name="mod_cluster"/>
             <layer model="standalone" name="singleton-ha"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -18915,7 +18915,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -18933,7 +18933,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.iiop-openjdk">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.iiop-openjdk:subsystem=iiop-openjdk">
                     <param name="security" value="elytron"/>
@@ -19135,7 +19135,7 @@
             <layer model="standalone" name="embedded-activemq"/>
             <layer model="standalone" name="internal-standalone-full-profile"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -21241,7 +21241,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -21259,7 +21259,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.iiop-openjdk">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.iiop-openjdk:subsystem=iiop-openjdk">
                     <param name="security" value="elytron"/>
@@ -21283,7 +21283,7 @@
             <prop name="config.merge-independent-branches" value="true"/>
             <prop name="--remove-existing-host-config" value=""/>
         </props>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="host">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}host:host=primary">
                     <param name="host" value="primary"/>
@@ -21705,7 +21705,7 @@
             <prop name="config.merge-independent-branches" value="true"/>
             <prop name="--remove-existing-host-config" value=""/>
         </props>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="host">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}host:host=primary">
                     <param name="host" value="primary"/>
@@ -22143,7 +22143,7 @@
             <layer model="standalone" name="microprofile-rest-client"/>
             <layer model="standalone" name="elytron-oidc-client"/>
         </layers>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="server-root">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}server-root:server-root=/">
                     <param name="server-root" value="/"/>
@@ -23505,7 +23505,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.microprofile-config-smallrye">
                 <feature id="{wildfly@maven(org.jboss.universe:community-universe)}subsystem.microprofile-config-smallrye:subsystem=microprofile-config-smallrye">
                     <param name="host" value="GLN_UNDEFINED"/>
@@ -23566,7 +23566,7 @@
                 </feature>
             </spec>
         </feature-pack>
-        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.1.Final">
+        <feature-pack location="wildfly-ee@maven(org.jboss.universe:community-universe):current#33.0.2.Final">
             <spec name="subsystem.elytron-oidc-client">
                 <feature id="{wildfly-ee@maven(org.jboss.universe:community-universe)}subsystem.elytron-oidc-client:subsystem=elytron-oidc-client">
                     <param name="host" value="GLN_UNDEFINED"/>

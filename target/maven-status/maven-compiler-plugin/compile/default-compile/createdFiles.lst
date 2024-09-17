@@ -2,6 +2,8 @@ br/com/cristiano/reservashotel/models/Endereco.class
 br/com/cristiano/reservashotel/services/HelloWorldService.class
 br/com/cristiano/reservashotel/models/PessoaFisica.class
 br/com/cristiano/reservashotel/models/Pessoa.class
+br/com/cristiano/reservashotel/beans/MeuPrimeiroBean.class
+br/com/cristiano/reservashotel/models/DiariaReservada.class
 br/com/cristiano/reservashotel/models/PessoaJuridica.class
 br/com/cristiano/reservashotel/models/Reserva.class
 br/com/cristiano/reservashotel/enums/Sexo.class

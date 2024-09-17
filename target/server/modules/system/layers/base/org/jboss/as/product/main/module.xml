@@ -11,6 +11,6 @@
 
     <resources>
         <resource-root path="."/>
-        <resource-root path="wildfly-feature-pack-product-conf-33.0.1.Final.jar"/>
+        <resource-root path="wildfly-feature-pack-product-conf-33.0.2.Final.jar"/>
     </resources>
 </module>

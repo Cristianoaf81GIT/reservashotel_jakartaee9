@@ -75,7 +75,7 @@ jdr.ps1
 jdr.sh
 916490961d30ce4c34ce78782409ed267bfeefbe
 launcher.jar
-10fbd48afc9a9e96d1f1d1f460caf9f553c48134
+67ec774640883dbd91d9b2cd6f951d0b1ece3623
 product.conf
 ba237d5eb52965bcbf1d6fa558f1566c0157b22b
 standalone.bat
@@ -91,7 +91,7 @@ standalone.ps1
 standalone.sh
 155bb8e1d30289d5b1669f157f9837e07ff56efe
 wildfly-elytron-tool.jar
-15c4a0a0c87b674035f3967f7e4af57427e19950
+ee6a0e2b866d75e2c4079ca13b5c97996df427c9
 wsconsume.bat
 0df6b935bd43dc5767d13b9cbbb37c6014dccb66
 wsconsume.ps1

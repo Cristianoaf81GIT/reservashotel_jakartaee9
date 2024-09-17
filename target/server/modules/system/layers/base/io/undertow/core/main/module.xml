@@ -6,7 +6,7 @@
 <module name="io.undertow.core" xmlns="urn:jboss:module:1.9">
 
     <resources>
-        <resource-root path="undertow-core-2.3.15.Final.jar"/>
+        <resource-root path="undertow-core-2.3.17.Final.jar"/>
     </resources>
 
     <dependencies>

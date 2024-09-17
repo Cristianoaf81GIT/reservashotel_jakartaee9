@@ -87,8 +87,17 @@
             <groupId>org.wildfly.plugins</groupId>
             <artifactId>wildfly-maven-plugin</artifactId>
             <version>5.0.0.Final</version>
-        </plugin>
-                
+            <configuration>
+            <add-user>
+                <users>
+                    <user>
+                        <username>admin</username>
+                        <password>adim</password>
+                    </user>                    
+                </users>
+            </add-user>
+            </configuration>
+        </plugin>                
         </plugins>
 
     </pluginManagement>

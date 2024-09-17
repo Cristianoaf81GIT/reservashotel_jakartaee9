@@ -844,7 +844,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-amqp-client</artifactId>
-      <version>4.5.8</version>
+      <version>4.5.10</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -861,7 +861,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-core</artifactId>
-      <version>4.5.8</version>
+      <version>4.5.10</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -878,7 +878,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-grpc-client</artifactId>
-      <version>4.5.8</version>
+      <version>4.5.10</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -895,7 +895,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-grpc-common</artifactId>
-      <version>4.5.8</version>
+      <version>4.5.10</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -929,7 +929,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-proton</artifactId>
-      <version>4.5.8</version>
+      <version>4.5.10</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1246,7 +1246,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-feature-pack-product-conf</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1258,7 +1258,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-micrometer</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1270,7 +1270,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-micrometer-deployment</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1282,7 +1282,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-config-smallrye</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1294,7 +1294,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-fault-tolerance-smallrye-deployment</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1306,7 +1306,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-fault-tolerance-smallrye-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1318,7 +1318,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-health-smallrye</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1330,7 +1330,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-jwt-smallrye</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1342,7 +1342,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-lra-coordinator</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1354,7 +1354,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-lra-participant</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1366,7 +1366,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-metrics-smallrye</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1378,7 +1378,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-openapi-smallrye</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1390,7 +1390,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-opentracing-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1402,7 +1402,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-messaging</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1414,7 +1414,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-messaging-amqp</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1426,7 +1426,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-messaging-common</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1438,7 +1438,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-messaging-config</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1450,7 +1450,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-messaging-kafka</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1462,7 +1462,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-streams-operators</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1474,7 +1474,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-reactive-streams-operators-cdi-provider</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1486,7 +1486,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-telemetry</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1498,7 +1498,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-microprofile-telemetry-cdi-provider</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1510,7 +1510,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-opentelemetry</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -1522,7 +1522,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-opentelemetry-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>

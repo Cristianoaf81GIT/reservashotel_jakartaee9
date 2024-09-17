@@ -9,7 +9,7 @@
     </properties>
 
     <resources>
-        <resource-root path="vertx-amqp-client-4.5.8.jar"/>
+        <resource-root path="vertx-amqp-client-4.5.10.jar"/>
     </resources>
 
     <dependencies>

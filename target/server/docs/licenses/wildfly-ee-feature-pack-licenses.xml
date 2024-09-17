@@ -775,7 +775,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-core</artifactId>
-      <version>2.3.15.Final</version>
+      <version>2.3.17.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -787,7 +787,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-servlet</artifactId>
-      <version>2.3.15.Final</version>
+      <version>2.3.17.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -799,7 +799,7 @@
     <dependency>
       <groupId>io.undertow</groupId>
       <artifactId>undertow-websockets-jsr</artifactId>
-      <version>2.3.15.Final</version>
+      <version>2.3.17.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4718,7 +4718,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>jipijapa-eclipselink</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4730,7 +4730,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>jipijapa-hibernate6</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4742,7 +4742,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>jipijapa-hibernatesearch</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4754,7 +4754,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>jipijapa-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4766,7 +4766,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-appclient</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4778,7 +4778,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-batch-jberet</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4790,7 +4790,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-bean-validation</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4802,7 +4802,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-client-all</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4814,7 +4814,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-common</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4826,7 +4826,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-context</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4838,7 +4838,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ee-cache</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4850,7 +4850,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ee-hotrod</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4862,7 +4862,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ee-infinispan</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4874,7 +4874,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ee-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4886,7 +4886,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ejb-cache</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4898,7 +4898,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ejb-client</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4910,7 +4910,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ejb-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4922,7 +4922,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ejb-infinispan</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4934,7 +4934,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-ejb-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4946,7 +4946,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-el-expressly</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4958,7 +4958,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-faces-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4970,7 +4970,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-faces-mojarra</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4982,7 +4982,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-client-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -4994,7 +4994,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-client-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5006,7 +5006,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-client-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5018,7 +5018,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-embedded-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5030,7 +5030,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-embedded-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5042,7 +5042,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-embedded-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5054,7 +5054,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5066,7 +5066,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-infinispan-marshalling</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5078,7 +5078,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-jgroups-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5090,7 +5090,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-jgroups-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5102,7 +5102,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-jgroups-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5114,7 +5114,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-marshalling-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5126,7 +5126,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-marshalling-jboss</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5138,7 +5138,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-marshalling-protostream</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5150,7 +5150,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-marshalling-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5162,7 +5162,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-server-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5174,7 +5174,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-server-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5186,7 +5186,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-server-infinispan</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5198,7 +5198,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-server-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5210,7 +5210,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-server-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5222,7 +5222,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5234,7 +5234,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-singleton-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5246,7 +5246,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-singleton-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5258,7 +5258,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-singleton-server</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5270,7 +5270,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-singleton-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5282,7 +5282,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-api</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5294,7 +5294,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-cache</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5306,7 +5306,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-container</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5318,7 +5318,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5330,7 +5330,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-hotrod</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5342,7 +5342,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-infinispan</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5354,7 +5354,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-service</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5366,7 +5366,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5378,7 +5378,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-web-undertow</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5390,7 +5390,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-weld-core</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5402,7 +5402,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-weld-ejb</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5414,7 +5414,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-clustering-weld-web</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5426,7 +5426,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-connector</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5438,7 +5438,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-datasources-agroal</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5450,7 +5450,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-ee</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5474,7 +5474,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-ee-security</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5486,7 +5486,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-ejb3</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5498,7 +5498,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-elytron-oidc-client-subsystem</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5510,7 +5510,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-health</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5522,7 +5522,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-iiop-openjdk</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5534,7 +5534,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jaxrs</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5546,7 +5546,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jdr</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5558,7 +5558,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jpa</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5570,7 +5570,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jsf</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5582,7 +5582,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jsf-injection</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5594,7 +5594,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-jsr77</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5606,7 +5606,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-keycloak</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5618,7 +5618,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-mail</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5630,7 +5630,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-messaging-activemq-injection</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5642,7 +5642,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-messaging-activemq-subsystem</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5654,7 +5654,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-metrics</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5666,7 +5666,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-mod_cluster-extension</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5678,7 +5678,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-mod_cluster-undertow</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5690,7 +5690,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-naming</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5714,7 +5714,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-picketlink</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5726,7 +5726,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-pojo</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5738,7 +5738,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-rts</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5750,7 +5750,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-sar</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5762,7 +5762,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-security</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5774,7 +5774,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-system-jmx</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5786,7 +5786,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-transactions</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5798,7 +5798,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-undertow</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5810,7 +5810,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-web-common</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5822,7 +5822,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-webservices-opensaml-sysconfig</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5834,7 +5834,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-webservices-server-integration</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5846,7 +5846,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5858,7 +5858,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-bean-validation</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5870,7 +5870,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-common</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5882,7 +5882,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-ejb</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5894,7 +5894,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-jpa</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5906,7 +5906,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-spi</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5918,7 +5918,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-transactions</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5930,7 +5930,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-weld-webservices</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5942,7 +5942,7 @@
     <dependency>
       <groupId>org.wildfly</groupId>
       <artifactId>wildfly-xts</artifactId>
-      <version>33.0.1.Final</version>
+      <version>33.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5978,7 +5978,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-cli</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -5994,7 +5994,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-controller</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6006,7 +6006,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-controller-client</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6018,7 +6018,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-core-management-client</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6030,7 +6030,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-core-management-subsystem</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6042,7 +6042,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-core-security</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6054,7 +6054,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-deployment-repository</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6066,7 +6066,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-deployment-scanner</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6078,7 +6078,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-discovery</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6090,7 +6090,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-domain-http-error-context</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6102,7 +6102,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-domain-http-interface</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6114,7 +6114,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-domain-management</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6126,7 +6126,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-elytron-integration</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6138,7 +6138,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-elytron-tool-wrapper</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6150,7 +6150,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-embedded</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6162,7 +6162,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-event-logger</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6174,7 +6174,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-host-controller</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6186,7 +6186,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-installation-manager</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6198,7 +6198,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-io</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6210,7 +6210,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-io-spi</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6222,7 +6222,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-jar-runtime</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6234,7 +6234,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-jmx</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6246,7 +6246,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-launcher</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6258,7 +6258,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-logging</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6270,7 +6270,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-management-client-content</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6282,7 +6282,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-network</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6294,7 +6294,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-patching</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6306,7 +6306,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-platform-mbean</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6318,7 +6318,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-process-controller</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6330,7 +6330,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-protocol</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6342,7 +6342,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-remoting</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6354,7 +6354,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-request-controller</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6366,7 +6366,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-security-manager</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6378,7 +6378,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-server</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6390,7 +6390,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-service</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6402,7 +6402,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-subsystem</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6414,7 +6414,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-threads</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6426,7 +6426,7 @@
     <dependency>
       <groupId>org.wildfly.core</groupId>
       <artifactId>wildfly-version</artifactId>
-      <version>25.0.1.Final</version>
+      <version>25.0.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6522,7 +6522,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-asn1</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6534,7 +6534,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-audit</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6546,7 +6546,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6558,7 +6558,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth-server</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6570,7 +6570,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth-server-deprecated</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6582,7 +6582,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth-server-http</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6594,7 +6594,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth-server-sasl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6606,7 +6606,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-auth-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6618,7 +6618,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-base</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6630,7 +6630,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-client</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6642,7 +6642,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-credential</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6654,7 +6654,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-credential-source-impl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6666,7 +6666,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-credential-store</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6678,7 +6678,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-digest</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6690,7 +6690,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-dynamic-ssl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6702,7 +6702,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-encryption</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6714,7 +6714,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6726,7 +6726,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-basic</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6738,7 +6738,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-bearer</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6750,7 +6750,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-cert</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6762,7 +6762,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-digest</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6774,7 +6774,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-external</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6786,7 +6786,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-form</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6798,7 +6798,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-oidc</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6810,7 +6810,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-spnego</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6822,7 +6822,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-sso</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6834,7 +6834,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-stateful-basic</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6846,7 +6846,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-http-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6858,7 +6858,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-jose-jwk</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6870,7 +6870,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-jose-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6882,7 +6882,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-json-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6894,7 +6894,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-keystore</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6906,7 +6906,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6918,7 +6918,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism-digest</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6930,7 +6930,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism-gssapi</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6942,7 +6942,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism-http</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6954,7 +6954,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism-oauth2</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6966,7 +6966,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-mechanism-scram</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6978,7 +6978,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-password-impl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -6990,7 +6990,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-permission</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7002,7 +7002,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-provider-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7014,7 +7014,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-realm</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7026,7 +7026,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-realm-jdbc</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7038,7 +7038,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-realm-ldap</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7050,7 +7050,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-realm-token</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7062,7 +7062,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7074,7 +7074,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-anonymous</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7086,7 +7086,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-auth-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7098,7 +7098,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-digest</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7110,7 +7110,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-entity</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7122,7 +7122,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-external</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7134,7 +7134,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-gs2</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7146,7 +7146,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-gssapi</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7158,7 +7158,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-localuser</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7170,7 +7170,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-oauth2</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7182,7 +7182,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-otp</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7194,7 +7194,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-plain</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7206,7 +7206,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-sasl-scram</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7218,7 +7218,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-security-manager</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7230,7 +7230,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-security-manager-action</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7242,7 +7242,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-ssh-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7254,7 +7254,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-ssl</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7266,7 +7266,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-tool</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7278,7 +7278,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7290,7 +7290,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-x500</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7302,7 +7302,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-x500-cert</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7314,7 +7314,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-x500-cert-acme</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7326,7 +7326,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-x500-cert-util</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>
@@ -7338,7 +7338,7 @@
     <dependency>
       <groupId>org.wildfly.security</groupId>
       <artifactId>wildfly-elytron-x500-principal</artifactId>
-      <version>2.5.1.Final</version>
+      <version>2.5.2.Final</version>
       <licenses>
         <license>
           <name>Apache License 2.0</name>

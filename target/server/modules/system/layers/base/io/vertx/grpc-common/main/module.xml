@@ -9,10 +9,11 @@
     </properties>
 
     <resources>
-        <resource-root path="vertx-grpc-common-4.5.8.jar"/>
+        <resource-root path="vertx-grpc-common-4.5.10.jar"/>
     </resources>
 
     <dependencies>
+        <module name="com.google.protobuf"/>
         <module name="io.netty.netty-buffer"/>
         <module name="io.netty.netty-codec"/>
         <module name="io.netty.netty-codec-http"/>

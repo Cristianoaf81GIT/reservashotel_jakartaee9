@@ -9,7 +9,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-threads-25.0.1.Final.jar"/>
+        <resource-root path="wildfly-threads-25.0.2.Final.jar"/>
     </resources>
 
     <dependencies>

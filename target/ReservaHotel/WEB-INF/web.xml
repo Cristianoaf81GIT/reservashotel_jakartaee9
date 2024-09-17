@@ -24,6 +24,7 @@
 
     <javaee:welcome-file-list>
         <javaee:welcome-file>index.xhtml</javaee:welcome-file>
+        <javaee:welcome-file>primeiro.xhtml</javaee:welcome-file>
     </javaee:welcome-file-list>
 
     </web-app>

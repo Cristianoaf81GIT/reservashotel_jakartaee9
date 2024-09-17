@@ -10,7 +10,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-jsf-injection-33.0.1.Final.jar"/>
+        <resource-root path="wildfly-jsf-injection-33.0.2.Final.jar"/>
         <resource-root path="weld-jsf-5.1.2.Final.jar"/>
     </resources>
 

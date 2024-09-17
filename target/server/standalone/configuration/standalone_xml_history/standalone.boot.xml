@@ -521,7 +521,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="ReservaHotel.war" runtime-name="ReservaHotel.war">
-            <content sha1="3fcb6caaada0f19469a3b0d5b99c9ea00fbdc0b3"/>
+            <content sha1="b448f17f2e0337f610cb18638094194ec1c50919"/>
         </deployment>
     </deployments>
 </server>

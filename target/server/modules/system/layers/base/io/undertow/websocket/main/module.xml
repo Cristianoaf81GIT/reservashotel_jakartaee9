@@ -9,7 +9,7 @@
     </properties>
 
     <resources>
-        <resource-root path="undertow-websockets-jsr-2.3.15.Final.jar"/>
+        <resource-root path="undertow-websockets-jsr-2.3.17.Final.jar"/>
     </resources>
 
     <dependencies>

@@ -1,8 +1,365 @@
-2024-09-11 19:57:39,064 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
-2024-09-11 19:57:40,066 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
-2024-09-11 19:57:40,082 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2024-09-11 19:57:40,282 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) starting
-2024-09-11 19:57:40,285 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+2024-09-17 20:24:37,949 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2024-09-17 20:24:38,947 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2024-09-17 20:24:38,964 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-09-17 20:24:39,170 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2024-09-17 20:24:39,172 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.12+7-LTS
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Azul Systems, Inc.
+	java.vendor.url = http://www.azul.com/
+	java.vendor.url.bug = http://www.azul.com/support/
+	java.vendor.version = Zulu17.52+17-CA
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Azul Systems, Inc.
+	java.vm.version = 17.0.12+7-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server
+	jboss.host.name = archcraft-370e4k
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = archcraft-370e4k
+	jboss.qualified.host.name = archcraft-370e4k
+	jboss.server.base.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone
+	jboss.server.config.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration
+	jboss.server.data.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data
+	jboss.server.log.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log
+	jboss.server.name = archcraft-370e4k
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties
+	module.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.10.7-arch1-1
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar -mp /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = US
+	user.dir = /home/cristiano/projects/java/jsf/ReservaHotel
+	user.home = /home/cristiano
+	user.language = en
+	user.name = cristiano
+	user.timezone = America/Sao_Paulo
+2024-09-17 20:24:39,175 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
+2024-09-17 20:24:42,435 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2024-09-17 20:24:45,288 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-09-17 20:24:45,320 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.16.Final
+2024-09-17 20:24:45,350 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.16.Final
+2024-09-17 20:24:45,463 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2024-09-17 20:24:45,511 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.29.Final
+2024-09-17 20:24:45,463 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-09-17 20:24:45,508 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-09-17 20:24:45,510 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-09-17 20:24:45,589 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-09-17 20:24:45,579 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2024-09-17 20:24:45,597 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-09-17 20:24:45,613 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2024-09-17 20:24:45,630 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-09-17 20:24:45,634 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2024-09-17 20:24:45,644 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-09-17 20:24:45,655 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2024-09-17 20:24:45,736 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2024-09-17 20:24:45,758 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2024-09-17 20:24:45,882 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.17.Final starting
+2024-09-17 20:24:45,887 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2024-09-17 20:24:45,983 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2024-09-17 20:24:46,006 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2024-09-17 20:24:46,221 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-09-17 20:24:46,239 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2024-09-17 20:24:46,277 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2024-09-17 20:24:46,279 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
+2024-09-17 20:24:46,281 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-09-17 20:24:46,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2024-09-17 20:24:46,359 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2024-09-17 20:24:46,367 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2024-09-17 20:24:46,483 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-09-17 20:24:46,921 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:24:47,046 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2024-09-17 20:24:47,252 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:24:47,383 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
+2024-09-17 20:24:47,583 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2024-09-17 20:24:48,113 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-09-17 20:24:48,135 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-09-17 20:24:48,141 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2024-09-17 20:24:48,144 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) started in 10921ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2024-09-17 20:25:33,518 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2024-09-17 20:25:34,551 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2024-09-17 20:25:34,567 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-09-17 20:25:34,764 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2024-09-17 20:25:34,766 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.12+7-LTS
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Azul Systems, Inc.
+	java.vendor.url = http://www.azul.com/
+	java.vendor.url.bug = http://www.azul.com/support/
+	java.vendor.version = Zulu17.52+17-CA
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Azul Systems, Inc.
+	java.vm.version = 17.0.12+7-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server
+	jboss.host.name = archcraft-370e4k
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = archcraft-370e4k
+	jboss.qualified.host.name = archcraft-370e4k
+	jboss.server.base.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone
+	jboss.server.config.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration
+	jboss.server.data.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data
+	jboss.server.log.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log
+	jboss.server.name = archcraft-370e4k
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties
+	module.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.10.7-arch1-1
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar -mp /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = US
+	user.dir = /home/cristiano/projects/java/jsf/ReservaHotel
+	user.home = /home/cristiano
+	user.language = en
+	user.name = cristiano
+	user.timezone = America/Sao_Paulo
+2024-09-17 20:25:34,767 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
+2024-09-17 20:25:36,340 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2024-09-17 20:25:37,558 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-09-17 20:25:37,596 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.16.Final
+2024-09-17 20:25:37,615 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.16.Final
+2024-09-17 20:25:37,709 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2024-09-17 20:25:37,729 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-09-17 20:25:37,734 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-09-17 20:25:37,777 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2024-09-17 20:25:37,801 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-09-17 20:25:37,805 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-09-17 20:25:37,830 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2024-09-17 20:25:37,852 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-09-17 20:25:37,860 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2024-09-17 20:25:37,861 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2024-09-17 20:25:37,880 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-09-17 20:25:37,934 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-09-17 20:25:37,935 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.29.Final
+2024-09-17 20:25:37,953 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2024-09-17 20:25:37,976 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2024-09-17 20:25:37,983 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2024-09-17 20:25:38,124 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2024-09-17 20:25:38,136 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2024-09-17 20:25:38,176 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.3.17.Final starting
+2024-09-17 20:25:38,280 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-09-17 20:25:38,323 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-09-17 20:25:38,477 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2024-09-17 20:25:38,480 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2024-09-17 20:25:38,494 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
+2024-09-17 20:25:38,495 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2024-09-17 20:25:38,525 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2024-09-17 20:25:38,528 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2024-09-17 20:25:38,773 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-09-17 20:25:39,102 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2024-09-17 20:25:39,208 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:25:39,403 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
+2024-09-17 20:25:39,435 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:25:39,552 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2024-09-17 20:25:40,250 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-09-17 20:25:40,274 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-09-17 20:25:40,275 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2024-09-17 20:25:40,285 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) started in 7496ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2024-09-17 20:26:44,629 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2024-09-17 20:26:45,625 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2024-09-17 20:26:45,645 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-09-17 20:26:45,845 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2024-09-17 20:26:45,847 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.12+7-LTS
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Azul Systems, Inc.
+	java.vendor.url = http://www.azul.com/
+	java.vendor.url.bug = http://www.azul.com/support/
+	java.vendor.version = Zulu17.52+17-CA
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Azul Systems, Inc.
+	java.vm.version = 17.0.12+7-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server
+	jboss.host.name = archcraft-370e4k
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = archcraft-370e4k
+	jboss.qualified.host.name = archcraft-370e4k
+	jboss.server.base.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone
+	jboss.server.config.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration
+	jboss.server.data.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data
+	jboss.server.log.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log
+	jboss.server.name = archcraft-370e4k
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties
+	module.path = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.10.7-arch1-1
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /home/cristiano/.sdkman/candidates/java/17.0.12.fx-zulu/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/cristiano/projects/java/jsf/ReservaHotel/target/server/jboss-modules.jar -mp /home/cristiano/projects/java/jsf/ReservaHotel/target/server/modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = US
+	user.dir = /home/cristiano/projects/java/jsf/ReservaHotel
+	user.home = /home/cristiano
+	user.language = en
+	user.name = cristiano
+	user.timezone = America/Sao_Paulo
+2024-09-17 20:26:45,848 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
+2024-09-17 20:26:47,475 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2024-09-17 20:26:48,762 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-09-17 20:26:48,792 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.16.Final
+2024-09-17 20:26:48,811 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.16.Final
+2024-09-17 20:26:48,924 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2024-09-17 20:26:48,932 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-09-17 20:26:48,939 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-09-17 20:26:48,957 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2024-09-17 20:26:48,963 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.29.Final
+2024-09-17 20:26:48,984 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-09-17 20:26:48,991 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2024-09-17 20:26:49,001 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-09-17 20:26:48,999 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-09-17 20:26:49,015 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2024-09-17 20:26:49,024 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2024-09-17 20:26:49,048 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2024-09-17 20:26:49,070 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-09-17 20:26:49,080 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-09-17 20:26:49,151 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2024-09-17 20:26:49,173 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2024-09-17 20:26:49,324 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2024-09-17 20:26:49,378 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2024-09-17 20:26:49,451 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-09-17 20:26:49,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.3.17.Final starting
+2024-09-17 20:26:49,557 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-09-17 20:26:49,646 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2024-09-17 20:26:49,646 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2024-09-17 20:26:49,842 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2024-09-17 20:26:49,845 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2024-09-17 20:26:49,853 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+2024-09-17 20:26:49,876 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2024-09-17 20:26:49,951 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-09-17 20:26:50,271 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2024-09-17 20:26:50,302 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:26:50,567 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:26:50,711 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
+2024-09-17 20:26:51,171 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2024-09-17 20:26:51,843 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-09-17 20:26:51,867 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-09-17 20:26:51,868 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2024-09-17 20:26:51,871 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) started in 8106ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2024-09-17 20:27:16,722 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2024-09-17 20:27:17,780 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2024-09-17 20:27:17,795 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-09-17 20:27:17,970 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2024-09-17 20:27:17,972 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
 	[Standalone] = 
 	file.encoding = UTF-8
 	file.separator = /
@@ -75,77 +432,77 @@
 	user.language = en
 	user.name = cristiano
 	user.timezone = America/Sao_Paulo
-2024-09-11 19:57:40,286 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
-2024-09-11 19:57:42,141 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.1.Final
-2024-09-11 19:57:43,390 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2024-09-11 19:57:43,423 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.16.Final
-2024-09-11 19:57:43,433 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.16.Final
-2024-09-11 19:57:43,526 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
-2024-09-11 19:57:43,526 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
-2024-09-11 19:57:43,534 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
-2024-09-11 19:57:43,602 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2024-09-11 19:57:43,614 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2024-09-11 19:57:43,592 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2024-09-11 19:57:43,628 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
-2024-09-11 19:57:43,644 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2024-09-11 19:57:43,639 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.29.Final
-2024-09-11 19:57:43,652 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2024-09-11 19:57:43,641 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
-2024-09-11 19:57:43,656 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
-2024-09-11 19:57:43,661 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
-2024-09-11 19:57:43,664 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
-2024-09-11 19:57:43,704 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
-2024-09-11 19:57:43,723 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2024-09-11 19:57:43,879 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
-2024-09-11 19:57:43,880 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2024-09-11 19:57:43,949 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.3.15.Final starting
-2024-09-11 19:57:43,951 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
-2024-09-11 19:57:44,036 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
-2024-09-11 19:57:44,246 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
-2024-09-11 19:57:44,247 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
-2024-09-11 19:57:44,318 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2024-09-11 19:57:44,356 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
-2024-09-11 19:57:44,382 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
-2024-09-11 19:57:44,383 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
-2024-09-11 19:57:44,532 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2024-09-11 19:57:44,901 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2024-09-11 19:57:44,949 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2024-09-11 19:57:45,093 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2024-09-11 19:57:45,341 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
-2024-09-11 19:57:45,669 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
-2024-09-11 19:57:46,086 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2024-09-11 19:57:46,109 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2024-09-11 19:57:46,109 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2024-09-11 19:57:46,113 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) started in 7800ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
-2024-09-11 19:57:47,736 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/3f/cb6caaada0f19469a3b0d5b99c9ea00fbdc0b3/content
-2024-09-11 19:57:47,765 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
-2024-09-11 19:57:55,107 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment ReservaHotel.war
-2024-09-11 19:57:55,268 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 8.0.1.Final
-2024-09-11 19:57:56,417 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 5.1.2 (Final)
-2024-09-11 19:57:58,111 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 17) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
-2024-09-11 19:58:00,069 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 17) Running on PrimeFaces 14.0.0
-2024-09-11 19:58:00,097 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
-2024-09-11 19:58:00,195 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ReservaHotel.war" (runtime-name : "ReservaHotel.war")
-2024-09-11 20:35:46,054 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
-2024-09-11 20:35:46,058 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2024-09-11 20:35:46,061 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2024-09-11 20:35:46,100 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2024-09-11 20:35:46,108 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
-2024-09-11 20:35:46,142 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
-2024-09-11 20:35:46,195 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2024-09-11 20:35:46,201 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2024-09-11 20:35:46,260 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
-2024-09-11 20:35:46,261 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
-2024-09-11 20:35:46,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
-2024-09-11 20:35:46,265 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
-2024-09-11 20:35:46,283 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.3.15.Final stopping
-2024-09-11 20:35:46,342 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 276ms
-2024-09-11 20:35:46,351 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) stopped in 286ms
-2024-09-11 20:44:12,598 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
-2024-09-11 20:44:13,960 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
-2024-09-11 20:44:13,988 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2024-09-11 20:44:14,346 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) starting
-2024-09-11 20:44:14,349 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+2024-09-17 20:27:17,973 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
+2024-09-17 20:27:19,534 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2024-09-17 20:27:21,033 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-09-17 20:27:21,060 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.16.Final
+2024-09-17 20:27:21,077 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.16.Final
+2024-09-17 20:27:21,175 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2024-09-17 20:27:21,188 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-09-17 20:27:21,189 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-09-17 20:27:21,251 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2024-09-17 20:27:21,259 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-09-17 20:27:21,268 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2024-09-17 20:27:21,287 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-09-17 20:27:21,297 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.29.Final
+2024-09-17 20:27:21,293 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-09-17 20:27:21,309 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-09-17 20:27:21,315 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2024-09-17 20:27:21,337 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-09-17 20:27:21,358 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2024-09-17 20:27:21,463 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2024-09-17 20:27:21,464 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2024-09-17 20:27:21,465 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2024-09-17 20:27:21,467 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2024-09-17 20:27:21,487 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2024-09-17 20:27:21,530 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.3.17.Final starting
+2024-09-17 20:27:21,807 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-09-17 20:27:21,890 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-09-17 20:27:21,941 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2024-09-17 20:27:21,955 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2024-09-17 20:27:21,957 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2024-09-17 20:27:21,992 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2024-09-17 20:27:21,996 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2024-09-17 20:27:22,005 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2024-09-17 20:27:22,206 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-09-17 20:27:22,500 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:27:22,496 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2024-09-17 20:27:22,714 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
+2024-09-17 20:27:22,729 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:27:22,935 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2024-09-17 20:27:23,543 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-09-17 20:27:23,556 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-09-17 20:27:23,563 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2024-09-17 20:27:23,565 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) started in 8023ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2024-09-17 20:27:25,065 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/b4/48f17f2e0337f610cb18638094194ec1c50919/content
+2024-09-17 20:27:25,097 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
+2024-09-17 20:27:31,440 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ReservaHotel.war
+2024-09-17 20:27:31,629 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final
+2024-09-17 20:27:32,636 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 5.1.2 (Final)
+2024-09-17 20:27:34,187 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 12) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
+2024-09-17 20:27:36,300 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 12) Running on PrimeFaces 14.0.0
+2024-09-17 20:27:36,338 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
+2024-09-17 20:27:36,476 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ReservaHotel.war" (runtime-name : "ReservaHotel.war")
+2024-09-17 20:29:11,247 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-09-17 20:29:11,252 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:29:11,255 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-09-17 20:29:11,283 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-09-17 20:29:11,285 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
+2024-09-17 20:29:11,318 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2024-09-17 20:29:11,365 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:29:11,367 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-09-17 20:29:11,447 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2024-09-17 20:29:11,447 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-09-17 20:29:11,455 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2024-09-17 20:29:11,456 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2024-09-17 20:29:11,462 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.3.17.Final stopping
+2024-09-17 20:29:11,548 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 286ms
+2024-09-17 20:29:11,566 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) stopped in 305ms
+2024-09-17 20:35:43,015 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2024-09-17 20:35:43,997 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2024-09-17 20:35:44,010 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-09-17 20:35:44,174 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2024-09-17 20:35:44,176 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
 	[Standalone] = 
 	file.encoding = UTF-8
 	file.separator = /
@@ -218,91 +575,78 @@
 	user.language = en
 	user.name = cristiano
 	user.timezone = America/Sao_Paulo
-2024-09-11 20:44:14,351 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
-2024-09-11 20:44:16,553 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.1.Final
-2024-09-11 20:44:18,771 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2024-09-11 20:44:18,805 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.16.Final
-2024-09-11 20:44:18,832 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.16.Final
-2024-09-11 20:44:19,013 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
-2024-09-11 20:44:19,018 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
-2024-09-11 20:44:19,070 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2024-09-11 20:44:19,088 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2024-09-11 20:44:19,110 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
-2024-09-11 20:44:19,102 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2024-09-11 20:44:19,092 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
-2024-09-11 20:44:19,143 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2024-09-11 20:44:19,162 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2024-09-11 20:44:19,166 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.29.Final
-2024-09-11 20:44:19,178 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
-2024-09-11 20:44:19,188 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2024-09-11 20:44:19,231 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
-2024-09-11 20:44:19,262 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
-2024-09-11 20:44:19,264 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
-2024-09-11 20:44:19,285 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
-2024-09-11 20:44:19,435 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2024-09-11 20:44:19,428 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
-2024-09-11 20:44:19,562 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.3.15.Final starting
-2024-09-11 20:44:19,868 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
-2024-09-11 20:44:19,958 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
-2024-09-11 20:44:19,970 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
-2024-09-11 20:44:19,971 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
-2024-09-11 20:44:20,154 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2024-09-11 20:44:20,261 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
-2024-09-11 20:44:20,278 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) Queuing requests.
-2024-09-11 20:44:20,285 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
-2024-09-11 20:44:20,694 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2024-09-11 20:44:21,229 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2024-09-11 20:44:21,494 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2024-09-11 20:44:21,614 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2024-09-11 20:44:22,044 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
-2024-09-11 20:44:22,073 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
-2024-09-11 20:44:22,289 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
-2024-09-11 20:44:30,197 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ReservaHotel.war
-2024-09-11 20:44:30,397 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final
-2024-09-11 20:44:31,386 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 5.1.2 (Final)
-2024-09-11 20:44:32,927 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 81) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
-2024-09-11 20:44:35,340 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 81) Running on PrimeFaces 14.0.0
-2024-09-11 20:44:35,384 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
-2024-09-11 20:44:35,617 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ReservaHotel.war" (runtime-name : "ReservaHotel.war")
-2024-09-11 20:44:35,755 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2024-09-11 20:44:35,763 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2024-09-11 20:44:35,764 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2024-09-11 20:44:35,766 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) started in 24613ms - Started 441 of 671 services (325 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
-2024-09-11 20:44:37,594 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/4f/2a6dc49b841d4915afb198dcdc7faeefb232ec/content
-2024-09-11 20:44:37,608 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 29) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
-2024-09-11 20:44:37,798 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 197ms
-2024-09-11 20:44:37,809 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
-2024-09-11 20:44:43,164 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for ReservaHotel
-2024-09-11 20:44:43,477 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV6020260: Second level cache enabled for ReservaHotel.war#ReservaHotel
-2024-09-11 20:44:43,669 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment ReservaHotel.war
-2024-09-11 20:44:44,022 INFO  [org.jipijapa] (MSC service thread 1-4) JIPIORMV6020260: Second level cache enabled for ReservaHotel.war#ReservaHotel
-2024-09-11 20:44:44,438 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 33) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
-2024-09-11 20:44:45,015 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 33) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'ReservaHotel.war#ReservaHotel'
-2024-09-11 20:44:45,051 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 33) HHH000204: Processing PersistenceUnitInfo [name: ReservaHotel]
-2024-09-11 20:44:45,181 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 33) HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-09-11 20:44:45,812 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 33) HHH000025: Second-level cache region factory [org.infinispan.hibernate.cache.v62.InfinispanRegionFactory]
-2024-09-11 20:44:46,002 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 33) Envers integration enabled? : true
-2024-09-11 20:44:46,336 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 33) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'ReservaHotel.war#ReservaHotel'
-2024-09-11 20:44:49,068 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 18) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
-2024-09-11 20:44:50,251 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 18) Running on PrimeFaces 14.0.0
-2024-09-11 20:44:50,254 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 18) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
-2024-09-11 20:44:50,425 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "ReservaHotel.war" with deployment "ReservaHotel.war"
-2024-09-11 20:44:50,456 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/3f/cb6caaada0f19469a3b0d5b99c9ea00fbdc0b3/content
-2024-09-11 20:45:29,100 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
-2024-09-11 20:45:29,104 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2024-09-11 20:45:29,108 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2024-09-11 20:45:29,125 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2024-09-11 20:45:29,131 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 18) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
-2024-09-11 20:45:29,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
-2024-09-11 20:45:29,222 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 95) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'ReservaHotel.war#ReservaHotel'
-2024-09-11 20:45:29,227 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 95) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@d1e0641
-2024-09-11 20:45:29,251 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 95) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'ReservaHotel.war#ReservaHotel'
-2024-09-11 20:45:29,252 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2024-09-11 20:45:29,264 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2024-09-11 20:45:29,268 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
-2024-09-11 20:45:29,269 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
-2024-09-11 20:45:29,276 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
-2024-09-11 20:45:29,278 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
-2024-09-11 20:45:29,280 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.3.15.Final stopping
-2024-09-11 20:45:29,397 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 285ms
-2024-09-11 20:45:29,409 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly 33.0.1.Final (WildFly Core 25.0.1.Final) stopped in 297ms
+2024-09-17 20:35:44,177 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djava.security.manager=allow -Djboss.home.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server -Djboss.server.base.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone -Djboss.server.log.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log -Djboss.server.config.dir=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/log/server.log -Dlogging.configuration=file:/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/logging.properties 
+2024-09-17 20:35:45,757 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2024-09-17 20:35:47,048 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2024-09-17 20:35:47,078 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.16.Final
+2024-09-17 20:35:47,099 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.16.Final
+2024-09-17 20:35:47,213 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.29.Final
+2024-09-17 20:35:47,222 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2024-09-17 20:35:47,248 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2024-09-17 20:35:47,276 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2024-09-17 20:35:47,284 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2024-09-17 20:35:47,287 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2024-09-17 20:35:47,306 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2024-09-17 20:35:47,340 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2024-09-17 20:35:47,346 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2024-09-17 20:35:47,357 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2024-09-17 20:35:47,344 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2024-09-17 20:35:47,417 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2024-09-17 20:35:47,424 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2024-09-17 20:35:47,439 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2024-09-17 20:35:47,456 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2024-09-17 20:35:47,505 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2024-09-17 20:35:47,711 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2024-09-17 20:35:47,711 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2024-09-17 20:35:47,718 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.3.17.Final starting
+2024-09-17 20:35:47,859 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2024-09-17 20:35:47,925 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2024-09-17 20:35:47,996 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/cristiano/projects/java/jsf/ReservaHotel/target/server/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2024-09-17 20:35:48,022 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2024-09-17 20:35:48,024 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2024-09-17 20:35:48,026 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2024-09-17 20:35:48,048 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2024-09-17 20:35:48,062 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2024-09-17 20:35:48,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2024-09-17 20:35:48,480 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:35:48,619 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2024-09-17 20:35:48,729 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:35:48,801 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
+2024-09-17 20:35:48,845 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/deployments
+2024-09-17 20:35:49,095 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2024-09-17 20:35:56,442 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ReservaHotel.war
+2024-09-17 20:35:56,626 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final
+2024-09-17 20:35:57,566 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 5.1.2 (Final)
+2024-09-17 20:35:59,399 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 82) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
+2024-09-17 20:36:01,600 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 82) Running on PrimeFaces 14.0.0
+2024-09-17 20:36:01,650 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
+2024-09-17 20:36:01,840 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ReservaHotel.war" (runtime-name : "ReservaHotel.war")
+2024-09-17 20:36:01,939 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-09-17 20:36:01,947 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2024-09-17 20:36:01,948 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2024-09-17 20:36:01,950 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) started in 19631ms - Started 441 of 671 services (325 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2024-09-17 20:36:03,015 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/c2/2fe9820b18e38e3231c3edb2d31fd921100851/content
+2024-09-17 20:36:03,050 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 23) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
+2024-09-17 20:36:03,261 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 233ms
+2024-09-17 20:36:03,268 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "ReservaHotel.war" (runtime-name: "ReservaHotel.war")
+2024-09-17 20:36:07,673 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment ReservaHotel.war
+2024-09-17 20:36:08,567 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 7) Initializing Mojarra 4.0.7 for context '/ReservaHotel'
+2024-09-17 20:36:09,723 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 7) Running on PrimeFaces 14.0.0
+2024-09-17 20:36:09,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 7) WFLYUT0021: Registered web context: '/ReservaHotel' for server 'default-server'
+2024-09-17 20:36:09,837 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "ReservaHotel.war" with deployment "ReservaHotel.war"
+2024-09-17 20:36:09,848 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /home/cristiano/projects/java/jsf/ReservaHotel/target/server/standalone/data/content/b4/48f17f2e0337f610cb18638094194ec1c50919/content
+2024-09-17 20:37:52,977 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-09-17 20:37:52,981 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2024-09-17 20:37:52,984 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-09-17 20:37:53,004 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-09-17 20:37:53,009 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 7) WFLYUT0022: Unregistered web context: '/ReservaHotel' from server 'default-server'
+2024-09-17 20:37:53,022 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-09-17 20:37:53,044 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-09-17 20:37:53,049 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-09-17 20:37:53,070 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2024-09-17 20:37:53,070 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-09-17 20:37:53,081 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2024-09-17 20:37:53,084 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2024-09-17 20:37:53,094 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.3.17.Final stopping
+2024-09-17 20:37:53,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment ReservaHotel.war (runtime-name: ReservaHotel.war) in 142ms
+2024-09-17 20:37:53,140 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly 33.0.2.Final (WildFly Core 25.0.2.Final) stopped in 152ms

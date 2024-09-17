@@ -6,7 +6,7 @@
 <module name="org.wildfly.subsystem" xmlns="urn:jboss:module:1.9">
 
     <resources>
-        <resource-root path="wildfly-subsystem-25.0.1.Final.jar"/>
+        <resource-root path="wildfly-subsystem-25.0.2.Final.jar"/>
     </resources>
 
     <dependencies>
