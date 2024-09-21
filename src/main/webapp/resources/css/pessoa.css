@@ -1,0 +1,21 @@
+.body {
+  margin: 12px;
+  background-color: var(--surface-100);
+}
+.form {
+  margin: 8px;
+  padding: 8px;
+}
+.title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--blue-500) !important;
+}
+.label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+

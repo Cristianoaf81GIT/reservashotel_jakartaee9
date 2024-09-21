@@ -9,7 +9,7 @@ import br.com.cristiano.reservashotel.models.PessoaFisica;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
 
-@Named("cadastroPessoa")
+@Named("cadastroPessoaBean")
 @SessionScoped
 public class CadastroPessoaBean implements Serializable {
 
@@ -26,7 +26,7 @@ public class CadastroPessoaBean implements Serializable {
 
 
     public Pessoa getPessoaSelecionada() {
-        return this.getPessoaSelecionada();
+        return this.pessoalSelecionada;
     }
 
     public void setPessoalSelecionada(Pessoa p) {
@@ -62,6 +62,12 @@ public class CadastroPessoaBean implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(pessoalSelecionada, lista);
+    }
+
+    public void submit() {
+        System.out.println("Nome: " + this.pessoalSelecionada.getNome());
+        System.out.println("Email: " + this.pessoalSelecionada.getEmail());
+        System.out.println("Telefone: " + this.pessoalSelecionada.getTelefone());
     }
 
 }

@@ -26,5 +26,9 @@
         <javaee:welcome-file>index.xhtml</javaee:welcome-file>
         <javaee:welcome-file>primeiro.xhtml</javaee:welcome-file>
     </javaee:welcome-file-list>
-
+    
+    <context-param>
+        <param-name>primefaces.THEME</param-name>
+        <param-value>saga</param-value>
+    </context-param>
     </web-app>

@@ -13,3 +13,4 @@ $ ./mvnw wildfly:run
   #limpa e builda o projeto installando dependências
 $ ./mvnw clean install -DskipTests
 ```
+

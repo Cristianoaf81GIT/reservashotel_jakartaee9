@@ -5,9 +5,46 @@
     xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Cadastro de pessoa</title>
+        <link rel="shortcut icon" type="image/x-icon" href="#{resource['favicon/favicon.ico']}"/>   
+        <style>
+            button.ui-button {
+                margin: 8px !important;               
+            }
+            .ui-outputlabel .ui-outputlabel-label {
+                color: var(--blue-500);
+            }
+            .title {
+                color: var(--blue-500) !important;
+            }
+            .form {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </h:head>
-    <h:body>
-        <br/>
+    <h:body class="body">
+
+        <h1 class="title">Cadastro de Pessoa</h1>
+
+        <h:form class="form">
+            
+            <div class="card ui-fluid">
+                <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label"/>
+                <p:inputText id="name" value="#{cadastroPessoaBean.pessoaSelecionada.nome}"/>
+                
+                <p:outputLabel for="email" value="E-mail:" styleClass="ui-float-label"/>
+                <p:inputText id="email" value="#{cadastroPessoaBean.pessoaSelecionada.email}"/>
+
+                <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label"/>
+                <p:inputText id="telefone" value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"/>
+                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.submit()}" icon="pi pi-check"/>
+            </div>
+        </h:form>
+        <!--load custom css after primefaces!-->
+        <h:outputStylesheet library="css" name="pessoa.css"/>
+        <!--load primeflex!-->
+        <h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
     </h:body>
 </html>
 
