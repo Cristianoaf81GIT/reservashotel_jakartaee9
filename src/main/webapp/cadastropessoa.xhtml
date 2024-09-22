@@ -21,6 +21,15 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            .separator {
+                width: 100%;
+                height: 1rem;
+                background-color: transparent;
+                display:block;
+            }
+            .delete-icon {
+                color: var(--red-500) !important;
+            }
         </style>
     </h:head>
     <h:body class="body">
@@ -29,7 +38,7 @@
 
         <h:form class="form">
             
-            <div class="card ui-fluid">
+            <h:panelGroup styleClass="card ui-fluid" layout="block">
                 <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label"/>
                 <p:inputText id="name" value="#{cadastroPessoaBean.pessoaSelecionada.nome}"/>
                 
@@ -38,8 +47,33 @@
 
                 <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label"/>
                 <p:inputText id="telefone" value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"/>
-                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.submit()}" icon="pi pi-check"/>
-            </div>
+                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.submit()}" icon="pi pi-check" ajax="false"/>
+            </h:panelGroup>
+
+            <h:panelGroup styleClass="separator" layout="block"/>
+
+            <p:dataTable var="p" value="#{cadastroPessoaBean.lista}" showGridlines="true">
+                <p:column headerText="Código">
+                    <h:outputText value="#{p.codigo}" />
+                </p:column>
+                
+                <p:column headerText="Nome">
+                    <h:outputText value="#{p.nome}" />
+                </p:column>
+                
+                <p:column headerText="Telefone">
+                    <h:outputText value="#{p.telefone}" />
+                </p:column>
+
+                <p:column headerText="Ações">
+                    <p:tooltip for="editar" value="Editar pessoa" position="bottom"/>
+                    <p:commandButton type="button" id="editar" icon="pi pi-pencil" styleClass="rounded-button ui-button-flat" />
+
+                     <p:tooltip for="deletar" value="Deletar pessoa" position="bottom"/>
+                     <p:commandButton type="button" id="deletar" icon="pi pi-times" styleClass="rounded-button ui-button-flat delete-icon" />
+                </p:column>
+
+            </p:dataTable>
         </h:form>
         <!--load custom css after primefaces!-->
         <h:outputStylesheet library="css" name="pessoa.css"/>
