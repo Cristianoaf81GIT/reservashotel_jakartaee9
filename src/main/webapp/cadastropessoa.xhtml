@@ -47,7 +47,7 @@
 
                 <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label"/>
                 <p:inputText id="telefone" value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"/>
-                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.submit()}" icon="pi pi-check" ajax="false"/>
+                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false"/>
             </h:panelGroup>
 
             <h:panelGroup styleClass="separator" layout="block"/>
@@ -67,10 +67,22 @@
 
                 <p:column headerText="Ações">
                     <p:tooltip for="editar" value="Editar pessoa" position="bottom"/>
-                    <p:commandButton type="button" id="editar" icon="pi pi-pencil" styleClass="rounded-button ui-button-flat" />
+                    <p:commandButton 
+                        id="editar" 
+                        icon="pi pi-pencil" 
+                        styleClass="rounded-button ui-button-flat" 
+                        ajax="false"
+                        action="#{cadastroPessoaBean.setPessoaSelecionada(p)}"
+                    /> 
 
                      <p:tooltip for="deletar" value="Deletar pessoa" position="bottom"/>
-                     <p:commandButton type="button" id="deletar" icon="pi pi-times" styleClass="rounded-button ui-button-flat delete-icon" />
+                     <p:commandButton
+                        id="deletar" 
+                        icon="pi pi-times" 
+                        styleClass="rounded-button ui-button-flat delete-icon" 
+                        ajax="false"
+                        action="#{cadastroPessoaBean.excluirPessoa(p)}"
+                    />
                 </p:column>
 
             </p:dataTable>

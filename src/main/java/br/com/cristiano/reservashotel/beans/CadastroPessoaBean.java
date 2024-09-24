@@ -16,11 +16,11 @@ public class CadastroPessoaBean implements Serializable {
 
     private static final long serialVersionUID = -7600674761430266600L;
 
-    private Pessoa pessoalSelecionada;
+    private Pessoa pessoaSelecionada;
     private List<Pessoa> lista;
 
     public CadastroPessoaBean() {
-        this.pessoalSelecionada = new PessoaFisica();
+        this.pessoaSelecionada = new PessoaFisica();
         this.lista = new ArrayList<Pessoa>();
         for (int x = 0; x < 10; x++){
             PessoaFisica p = new PessoaFisica();
@@ -37,11 +37,11 @@ public class CadastroPessoaBean implements Serializable {
 
 
     public Pessoa getPessoaSelecionada() {
-        return this.pessoalSelecionada;
+        return this.pessoaSelecionada;
     }
 
-    public void setPessoalSelecionada(Pessoa p) {
-        this.pessoalSelecionada = p;
+    public void setPessoaSelecionada(Pessoa p) {
+        this.pessoaSelecionada = p;
     }
 
     public List<Pessoa> getLista() {
@@ -64,29 +64,38 @@ public class CadastroPessoaBean implements Serializable {
 
         CadastroPessoaBean pc = (CadastroPessoaBean) o;
 
-        return pessoalSelecionada.getEmail() == pc.getPessoaSelecionada().getEmail() &&
-            pc.getPessoaSelecionada().getCodigo() == pessoalSelecionada.getCodigo() &&
+        return pessoaSelecionada.getEmail() == pc.getPessoaSelecionada().getEmail() &&
+            pc.getPessoaSelecionada().getCodigo() == pessoaSelecionada.getCodigo() &&
             Objects.equals(lista, pc.lista);
     }
 
 
     @Override
     public int hashCode() {
-        return Objects.hash(pessoalSelecionada, lista);
+        return Objects.hash(pessoaSelecionada, lista);
     }
 
-    public void submit() {
-        System.out.println("Nome: " + this.pessoalSelecionada.getNome());
-        System.out.println("Email: " + this.pessoalSelecionada.getEmail());
-        System.out.println("Telefone: " + this.pessoalSelecionada.getTelefone());
+    public void salvar() {
+        System.out.println("Nome: " + this.pessoaSelecionada.getNome());
+        System.out.println("Email: " + this.pessoaSelecionada.getEmail());
+        System.out.println("Telefone: " + this.pessoaSelecionada.getTelefone());
         if (
-            this.pessoalSelecionada.getNome().length() > 0 && 
-            !this.lista.contains(this.pessoalSelecionada)
+            this.pessoaSelecionada.getNome().length() > 0 && 
+            !this.lista.contains(this.pessoaSelecionada)
         ) {
             int nextId = this.lista.size();
-            this.pessoalSelecionada.setCodigo(nextId);
-            this.lista.add(this.pessoalSelecionada);
+            this.pessoaSelecionada.setCodigo(nextId);
+            this.lista.add(this.pessoaSelecionada);
         }
+        
+        this.pessoaSelecionada = new PessoaFisica();
     }
 
+    public void excluirPessoa(Pessoa p) {
+        if (this.lista.contains(p)) {
+            this.lista.remove(p);
+            this.pessoaSelecionada = new PessoaFisica();
+        }
+    }
+    
 }
