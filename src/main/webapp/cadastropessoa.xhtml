@@ -37,17 +37,44 @@
         <h1 class="title">Cadastro de Pessoa</h1>
 
         <h:form class="form">
-            
-            <h:panelGroup styleClass="card ui-fluid" layout="block">
+            <!--<p:messages id="messages" showDetail="true" closable="true">
+                <p:autoUpdate/>
+                </p:messages>-->
+                <h:panelGroup styleClass="card ui-fluid" layout="block">
                 <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label"/>
-                <p:inputText id="name" value="#{cadastroPessoaBean.pessoaSelecionada.nome}"/>
-                
+                <p:inputText 
+                    id="name" 
+                    value="#{cadastroPessoaBean.pessoaSelecionada.nome}" 
+                    required="true" 
+                    requiredMessage="O nome é um campo obrigatório!"
+                />
+                <p:message for="name" showDetail="false" closable="true"/>
+
                 <p:outputLabel for="email" value="E-mail:" styleClass="ui-float-label"/>
-                <p:inputText id="email" value="#{cadastroPessoaBean.pessoaSelecionada.email}"/>
+                <p:inputText 
+                    id="email" 
+                    value="#{cadastroPessoaBean.pessoaSelecionada.email}" 
+                    required="true"
+                    validatorMessage="Email inválido!"
+                    requiredMessage="O campo email não pode estar vazio!"
+                >
+                    <f:validateRegex pattern=".+@.+"/>
+                </p:inputText>
+                <p:message for="email" showDetail="false" closable="true"/>    
 
                 <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label"/>
-                <p:inputText id="telefone" value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"/>
-                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false"/>
+                <p:inputText 
+                    id="telefone" 
+                    value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"
+                    requiredMessage="O campo telefone não pode estar vazio!!!"
+                    required="true"
+                    validatorMessage="Oops! telefone inválido!"
+                />
+                <p:message for="telefone" showDetail="false" closable="true"/>
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false"/>
+                    <p:commandButton value="Cancelar" icon="pi pi-undo" ajax="false"/>
+                </h:panelGrid>
             </h:panelGroup>
 
             <h:panelGroup styleClass="separator" layout="block"/>
