@@ -15,7 +15,7 @@ import jakarta.inject.Named;
 public class CadastroPessoaBean implements Serializable {
 
     private static final long serialVersionUID = -7600674761430266600L;
-
+    
     private Pessoa pessoaSelecionada;
     private List<Pessoa> lista;
 
@@ -86,9 +86,9 @@ public class CadastroPessoaBean implements Serializable {
             int nextId = this.lista.size();
             this.pessoaSelecionada.setCodigo(nextId);
             this.lista.add(this.pessoaSelecionada);
+            this.pessoaSelecionada = new PessoaFisica();
         }
         
-        this.pessoaSelecionada = new PessoaFisica();
     }
 
     public void excluirPessoa(Pessoa p) {

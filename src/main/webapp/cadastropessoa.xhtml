@@ -30,6 +30,9 @@
             .delete-icon {
                 color: var(--red-500) !important;
             }
+            .ui-outputlabel .ui-outputlabel-rfi {
+                color: var(--blue-500);
+            }
         </style>
     </h:head>
     <h:body class="body">
@@ -71,6 +74,19 @@
                     validatorMessage="Oops! telefone inválido!"
                 />
                 <p:message for="telefone" showDetail="false" closable="true"/>
+
+                <p:outputLabel for="cpf" value="cpf" styleClass="ui-float-label"/>
+                <p:inputMask
+                    id="cpf"
+                    value="#{cadastroPessoaBean.pessoaSelecionada.cpf}"
+                    requiredMessage="O campo cpf é obrigatório!"
+                    validatorMessage="Cpf inválido!"
+                    mask="999.999.999-99"
+                >
+                <f:validateRegex pattern="(^\d{3}\x2E\d{3}\x2E\d{3}\x2D\d{2}$)"/>
+                </p:inputMask>
+                <p:message for="cpf" showDetail="false" closable="true"/>
+
                 <h:panelGrid columns="2" cellpadding="10">
                     <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false"/>
                     <p:commandButton value="Cancelar" icon="pi pi-undo" ajax="false"/>
