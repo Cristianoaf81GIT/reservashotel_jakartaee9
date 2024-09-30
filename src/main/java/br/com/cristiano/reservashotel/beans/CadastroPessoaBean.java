@@ -97,5 +97,10 @@ public class CadastroPessoaBean implements Serializable {
             this.pessoaSelecionada = new PessoaFisica();
         }
     }
+
+    public String cancelar() {
+        //this.pessoaSelecionada = new PessoaFisica();
+        return "primeiro.jsf";
+    }
     
 }
