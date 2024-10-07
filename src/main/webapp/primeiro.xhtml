@@ -10,7 +10,14 @@
         <h1>
             Meu primeiro exemplo jsf
         </h1>
+        
         <h3>Sabe o que o bean tem a dizer?</h3>
-        <p>#{meuPrimeiroBean.ola}</p>
+        <h:outputText value="#{meuPrimeiroBean.ola}" rendered="#{meuPrimeiroBean.mostrar}" escape="false"/><br/><br/>
+ 
+        <h:form>
+            Mostra valor de Bean?<br/><br/>
+            <h:selectBooleanCheckbox value="#{meuPrimeiroBean.mostrar}"/><br/><br/>
+            <h:commandButton value="submit"/>
+        </h:form>
     </h:body>
 </html>
