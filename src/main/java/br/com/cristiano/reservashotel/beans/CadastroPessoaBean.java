@@ -86,7 +86,7 @@ public class CadastroPessoaBean implements Serializable {
             int nextId = this.lista.size();
             this.pessoaSelecionada.setCodigo(nextId);
             this.lista.add(this.pessoaSelecionada);
-            this.pessoaSelecionada = new PessoaFisica();
+           // this.pessoaSelecionada = new PessoaFisica();
         }
         
     }
@@ -101,6 +101,10 @@ public class CadastroPessoaBean implements Serializable {
     public String cancelar() {
         //this.pessoaSelecionada = new PessoaFisica();
         return "primeiro.jsf";
+    }
+
+    public Sexo[] getSexos() {
+        return Sexo.values();
     }
     
 }
