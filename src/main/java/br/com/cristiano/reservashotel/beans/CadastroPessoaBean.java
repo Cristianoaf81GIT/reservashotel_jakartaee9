@@ -18,6 +18,7 @@ public class CadastroPessoaBean implements Serializable {
     
     private Pessoa pessoaSelecionada;
     private List<Pessoa> lista;
+    private String tipoNovaPessoa;
 
     public CadastroPessoaBean() {
         this.pessoaSelecionada = new PessoaFisica();
@@ -66,13 +67,13 @@ public class CadastroPessoaBean implements Serializable {
 
         return pessoaSelecionada.getEmail() == pc.getPessoaSelecionada().getEmail() &&
             pc.getPessoaSelecionada().getCodigo() == pessoaSelecionada.getCodigo() &&
-            Objects.equals(lista, pc.lista);
+            Objects.equals(lista, pc.lista) && Objects.equals(tipoNovaPessoa, pc.getTipoNovaPessoa());
     }
 
 
     @Override
     public int hashCode() {
-        return Objects.hash(pessoaSelecionada, lista);
+        return Objects.hash(pessoaSelecionada, lista, tipoNovaPessoa);
     }
 
     public void salvar() {
@@ -105,6 +106,14 @@ public class CadastroPessoaBean implements Serializable {
 
     public Sexo[] getSexos() {
         return Sexo.values();
+    }
+
+    public String getTipoNovaPessoa() {
+        return this.tipoNovaPessoa;
+    }
+
+    public void setTipoNovaPessoa(String tipoNovaPessoa) {
+        this.tipoNovaPessoa = tipoNovaPessoa;
     }
     
 }
