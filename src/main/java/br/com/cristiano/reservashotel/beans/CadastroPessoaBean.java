@@ -8,6 +8,8 @@ import br.com.cristiano.reservashotel.enums.Sexo;
 import br.com.cristiano.reservashotel.models.Pessoa;
 import br.com.cristiano.reservashotel.models.PessoaFisica;
 import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
 
 @Named("cadastroPessoaBean")
@@ -96,6 +98,15 @@ public class CadastroPessoaBean implements Serializable {
         if (this.lista.contains(p)) {
             this.lista.remove(p);
             this.pessoaSelecionada = new PessoaFisica();
+            FacesContext
+                .getCurrentInstance()
+                .addMessage("message", 
+                    new FacesMessage(
+                        FacesMessage.SEVERITY_INFO,
+                        "Pessoa removida com sucesso!",
+                        ""
+                    )
+                );
         }
     }
 
