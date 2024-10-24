@@ -6,67 +6,67 @@ import jakarta.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("PJ")
-class PessoaJuridica extends Pessoa {
+public class PessoaJuridica extends Pessoa {
 
-    private String razaoSocial;
-    private String cnpj;
-    private String inscricaoEstadual;
-    private String inscricaoMunicipal;
+  private String razaoSocial;
+  private String cnpj;
+  private String inscricaoEstadual;
+  private String inscricaoMunicipal;
 
-    public PessoaJuridica() {
-        super();
-    }
-    
-    public String getRazaoSocial() {
-        return this.razaoSocial;
-    }
-    
-    public String getCnpj() {
-        return this.cnpj;
-    }
+  public PessoaJuridica() {
+    super();
+  }
 
-    public String getInscricaoEstadual() {
-        return this.inscricaoEstadual;
-    }
+  public String getRazaoSocial() {
+    return this.razaoSocial;
+  }
 
-    public String getInscricaoMunicipal() {
-        return this.inscricaoMunicipal;
-    }
+  public String getCnpj() {
+    return this.cnpj;
+  }
 
-    public void setRazaoSocial(String valor) {
-        this.razaoSocial = valor;
-    }
+  public String getInscricaoEstadual() {
+    return this.inscricaoEstadual;
+  }
 
-    public void setCnpj(String valor) {
-        this.cnpj = valor;
-    }
+  public String getInscricaoMunicipal() {
+    return this.inscricaoMunicipal;
+  }
 
-    public void setInscricaoEstadual(String valor) {
-        this.inscricaoEstadual = valor;
-    }
+  public void setRazaoSocial(String valor) {
+    this.razaoSocial = valor;
+  }
 
-    public void setInscricaoMunicipal(String valor) {
-        this.inscricaoMunicipal = valor;
-    }
+  public void setCnpj(String valor) {
+    this.cnpj = valor;
+  }
+
+  public void setInscricaoEstadual(String valor) {
+    this.inscricaoEstadual = valor;
+  }
+
+  public void setInscricaoMunicipal(String valor) {
+    this.inscricaoMunicipal = valor;
+  }
 
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this != obj) {
-            return false;
-        }
-
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-
-        PessoaJuridica p = (PessoaJuridica) obj;
-
-        return cnpj == p.cnpj && Objects.equals(p.razaoSocial, razaoSocial);
+  @Override
+  public boolean equals(Object obj) {
+    if (this != obj) {
+      return false;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cnpj, razaoSocial, inscricaoEstadual, inscricaoMunicipal);
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
     }
+
+    PessoaJuridica p = (PessoaJuridica) obj;
+
+    return cnpj == p.cnpj && Objects.equals(p.razaoSocial, razaoSocial);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(cnpj, razaoSocial, inscricaoEstadual, inscricaoMunicipal);
+  }
 }
