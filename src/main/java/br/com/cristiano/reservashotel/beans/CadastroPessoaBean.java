@@ -39,7 +39,7 @@ public class CadastroPessoaBean implements Serializable {
   public void criar() {
     FacesContext context = FacesContext.getCurrentInstance();
     if (tipoNovaPessoa == null) {
-      context.addMessage(null,
+      context.addMessage("messages",
           new FacesMessage(FacesMessage.SEVERITY_WARN, "You need to specify person type!", ""));
       return;
     }
@@ -49,7 +49,7 @@ public class CadastroPessoaBean implements Serializable {
     } else if (tipoNovaPessoa.equals("PJ")) {
       pessoaSelecionada = new PessoaJuridica();
     }
-    context.addMessage(null,
+    context.addMessage("messages",
         new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully created new person!", ""));
 
   }
@@ -70,30 +70,6 @@ public class CadastroPessoaBean implements Serializable {
     this.lista = lista;
   }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this != o) {
-      return false;
-    }
-
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-
-    CadastroPessoaBean pc = (CadastroPessoaBean) o;
-
-    return pessoaSelecionada.getEmail() == pc.getPessoaSelecionada().getEmail()
-        && pc.getPessoaSelecionada().getCodigo() == pessoaSelecionada.getCodigo()
-        && Objects.equals(lista, pc.lista)
-        && Objects.equals(tipoNovaPessoa, pc.getTipoNovaPessoa());
-  }
-
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(pessoaSelecionada, lista, tipoNovaPessoa);
-  }
-
   public void salvar() {
     System.out.println("Nome: " + this.pessoaSelecionada.getNome());
     System.out.println("Email: " + this.pessoaSelecionada.getEmail());
@@ -105,14 +81,17 @@ public class CadastroPessoaBean implements Serializable {
       this.lista.add(this.pessoaSelecionada);
       // this.pessoaSelecionada = new PessoaFisica();
     }
-
+    FacesContext contexto = FacesContext.getCurrentInstance();
+    contexto.addMessage(
+        "messages",
+        new FacesMessage(FacesMessage.SEVERITY_INFO, "Edição efetuada com sucesso!", ""));
   }
 
   public void excluirPessoa(Pessoa p) {
     if (this.lista.contains(p)) {
       this.lista.remove(p);
       this.pessoaSelecionada = new PessoaFisica();
-      FacesContext.getCurrentInstance().addMessage("message",
+      FacesContext.getCurrentInstance().addMessage("messages",
           new FacesMessage(FacesMessage.SEVERITY_INFO, "Pessoa removida com sucesso!", ""));
     }
   }
@@ -132,6 +111,14 @@ public class CadastroPessoaBean implements Serializable {
 
   public void setTipoNovaPessoa(String tipoNovaPessoa) {
     this.tipoNovaPessoa = tipoNovaPessoa;
+  }
+
+  public boolean isPessoaFisicaSelecionada() {
+    return pessoaSelecionada instanceof PessoaFisica;
+  }
+
+  public boolean isPessoaJuridicaSelecionada() {
+    return pessoaSelecionada instanceof PessoaJuridica;
   }
 
 }

@@ -1,186 +1,177 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html  xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:h="http://xmlns.jcp.org/jsf/html"
-    xmlns:f="http://xmlns.jcp.org/jsf/core"
-    xmlns:p="http://primefaces.org/ui"
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui"
     xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
-    <h:head>
-        <title>Cadastro de pessoa</title>
-        <link rel="shortcut icon" type="image/x-icon" href="#{resource['favicon/favicon.ico']}"/>   
-        <style>
-            button.ui-button {
-                margin: 8px !important;               
-            }
-            .ui-outputlabel .ui-outputlabel-label {
-                color: var(--blue-500);
-            }
-            .title {
-                color: var(--blue-500) !important;
-            }
-            .form {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .separator {
-                width: 100%;
-                height: 1rem;
-                background-color: transparent;
-                display:block;
-            }
-            .delete-icon {
-                color: var(--red-500) !important;
-            }
-            .ui-outputlabel .ui-outputlabel-rfi {
-                color: var(--blue-500);
-            }
-            .logo {
-                margin-left: 10%;
-            }
-            .sexo {
-                color: var(--blue-500) !important;
-            }
-        </style>
-    </h:head>
-    <h:body class="body">
+<h:head>
+    <title>Cadastro de pessoa</title>
+    <link rel="shortcut icon" type="image/x-icon" href="#{resource['favicon/favicon.ico']}" />
+    <style>
+        button.ui-button {
+            margin: 8px !important;
+        }
+
+        .ui-outputlabel .ui-outputlabel-label {
+            color: var(--blue-500);
+        }
+
+        .title {
+            color: var(--blue-500) !important;
+        }
+
+        .form {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .separator {
+            width: 100%;
+            height: 1rem;
+            background-color: transparent;
+            display: block;
+        }
+
+        .delete-icon {
+            color: var(--red-500) !important;
+        }
+
+        .ui-outputlabel .ui-outputlabel-rfi {
+            color: var(--blue-500);
+        }
+
+        .logo {
+            margin-left: 10%;
+        }
+
+        .sexo {
+            color: var(--blue-500) !important;
+        }
+
+        label {
+            color: var(--blue-500) !important;
+        }
+    </style>
+</h:head>
+<h:body class="body">
     <!--<h:graphicImage name="especializa.jpg" library="images" styleClass="logo"/>-->
-        <h:form class="form">
-            <p:selectOneMenu value="#{cadastroPessoaBean.tipoNovaPessoa}">
-                <f:selectItem itemLabel="Pessoa Física" itemValue="PF"/>
-                <f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ"/>
-            </p:selectOneMenu>
-        </h:form>
-        <h:panelGroup styleClass="separator" layout="block"/>
-        <h:form class="form">
-            <h:graphicImage value="#{resource['images:especializa.jpg']}"/>
-            <h1 class="title">Cadastro de Pessoa</h1>
 
-            <p:messages id="messages" showDetail="true" closable="true">
-                <p:autoUpdate/>
-            </p:messages>
-            <h:panelGroup styleClass="grid border-round" layout="block">                
-                <h:panelGroup layout="block" styleClass="col">                    
-                    <h:panelGrid columns="3">
-                        <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label"/>
-                        <p:inputText 
-                            id="name" 
-                            value="#{cadastroPessoaBean.pessoaSelecionada.nome}" 
-                            required="false" 
-                            requiredMessage="O nome é um campo obrigatório!"
-                        />
-                        <p:message for="name" showDetail="false" closable="true"/>
+    <h:form class="form" rendered="#{empty cadastroPessoaBean.pessoaSelecionada}">
+        <h:panelGrid id="gridTipoPessoa" columns="2">
+            <f:facet name="header">Tipo pessoa</f:facet>
+            <!-- <p:selectOneMenu value="#{cadastroPessoaBean.tipoNovaPessoa}">
+                <f:selectItem itemLabel="Pessoa Física" itemValue="PF" />
+                <f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ" />
+            </p:selectOneMenu> -->
+            <p:selectOneRadio value="#{cadastroPessoaBean.tipoNovaPessoa}">
+                <f:selectItem itemLabel="Pessoa Fisica" itemValue="PF" />
+                <f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ" />
+            </p:selectOneRadio>
+            <p:commandButton ajax="false" value="Criar Nova" action="#{cadastroPessoaBean.criar}" />
+        </h:panelGrid>
+    </h:form>
 
-                        <p:outputLabel for="email" value="E-mail:" styleClass="ui-float-label"/>
-                        <p:inputText 
-                            id="email" 
-                            value="#{cadastroPessoaBean.pessoaSelecionada.email}" 
-                            required="false"
-                            validatorMessage="Email inválido!"
-                            requiredMessage="O campo email não pode estar vazio!"
-                        >
+    <h:panelGroup styleClass="separator" layout="block" />
+    <h:form class="form" rendered="#{not empty cadastroPessoaBean.pessoaSelecionada}">
+        <h:graphicImage value="#{resource['images:especializa.jpg']}" />
+        <h1 class="title">Cadastro de Pessoa</h1>
+
+        <p:messages id="messages" showDetail="true" closable="true">
+            <p:autoUpdate />
+        </p:messages>
+        <h:panelGroup styleClass="grid border-round" layout="block">
+            <h:panelGroup layout="block" styleClass="col">
+                <h:panelGrid columns="3">
+                    <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label" />
+                    <p:inputText id="name" value="#{cadastroPessoaBean.pessoaSelecionada.nome}" required="false"
+                        requiredMessage="O nome é um campo obrigatório!" />
+                    <p:message for="name" showDetail="false" closable="true" />
+
+                    <p:outputLabel for="email" value="E-mail:" styleClass="ui-float-label" />
+                    <p:inputText id="email" value="#{cadastroPessoaBean.pessoaSelecionada.email}" required="false"
+                        validatorMessage="Email inválido!" requiredMessage="O campo email não pode estar vazio!">
                         <!--<f:validateRegex pattern=".+@.+"/>-->
-                        </p:inputText>
-                        <p:message for="email" showDetail="false" closable="true"/>    
+                    </p:inputText>
+                    <p:message for="email" showDetail="false" closable="true" />
 
-                        <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label"/>
-                        <p:inputText 
-                            id="telefone" 
-                            value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"
-                            requiredMessage="O campo telefone não pode estar vazio!!!"
-                            required="false"
-                            validatorMessage="Oops! telefone inválido!"
-                        />
-                        <p:message for="telefone" showDetail="false" closable="true"/>
-                    </h:panelGrid>
-                </h:panelGroup>
-                
-                <h:panelGroup id="painelPF" styleClass="col" layout="block">
-                    <h:panelGrid columns="3">
-                        <p:outputLabel for="cpf" value="Cpf" styleClass="ui-float-label"/>
-                        <p:inputMask
-                            id="cpf"
-                            value="#{cadastroPessoaBean.pessoaSelecionada.cpf}"
-                            requiredMessage="O campo cpf é obrigatório!"
-                            validatorMessage="Cpf inválido!"
-                            mask="999.999.999-99"
-                            required="false"
-                        >
-                        <!--<f:validateRegex pattern="(^\d{3}\x2E\d{3}\x2E\d{3}\x2D\d{2}$)"/>-->
-                        </p:inputMask>
-                        <p:message for="cpf" showDetail="false" closable="true"/>
-
-                        <p:outputLabel for="datanascimento" value="Data Nascimento" styleClass="ui-float-label"/>
-                        <p:inputMask
-                            id="datanascimento"
-                            value="#{cadastroPessoaBean.pessoaSelecionada.dataNascimento}"
-                            requiredMessage="O campo Data Nascimento é obrigatório"
-                            validatorMessage="Data de nascimento inválida"
-                            mask="99/99/9999"
-                            required="false"
-                            converterMessage="A máscara de data deve ser dd/mm/yyyy"
-                        >
-                        <f:convertDateTime pattern="dd/MM/yyyy"/>
-                        </p:inputMask>
-                        <p:message for="datanascimento" showDetail="false" closable="true"/>
-
-                        <p:outputLabel for="sexo" value="Sexo"/>
-                        
-                        <p:selectOneRadio id="sexo" value="#{cadastroPessoaBean.pessoaSelecionada.sexo}" layout="pageDirection">
-                            <f:selectItems value="#{cadastroPessoaBean.sexos}" var="s" itemLabel="#{s.nome}" styleClass="sexo"/>
-                        </p:selectOneRadio>
-
-                        <p:message for="sexo" showDetail="false" closable="true"/>
-                    </h:panelGrid>
-                </h:panelGroup>
+                    <p:outputLabel for="telefone" value="Telefone:" styleClass="ui-float-label" />
+                    <p:inputText id="telefone" value="#{cadastroPessoaBean.pessoaSelecionada.telefone}"
+                        requiredMessage="O campo telefone não pode estar vazio!!!" required="false"
+                        validatorMessage="Oops! telefone inválido!" />
+                    <p:message for="telefone" showDetail="false" closable="true" />
+                </h:panelGrid>
             </h:panelGroup>
 
-            <h:panelGrid columns="2" cellpadding="10">
-                <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false"/>
-                <p:commandButton value="Cancelar" icon="pi pi-undo" ajax="false" action="#{cadastroPessoaBean.cancelar()}" immediate="true"/>
-            </h:panelGrid>
+            <h:panelGroup id="painelPF" styleClass="col" layout="block">
+                <h:panelGrid columns="3">
+                    <p:outputLabel for="cpf" value="Cpf" styleClass="ui-float-label" />
+                    <p:inputMask id="cpf" value="#{cadastroPessoaBean.pessoaSelecionada.cpf}"
+                        requiredMessage="O campo cpf é obrigatório!" validatorMessage="Cpf inválido!"
+                        mask="999.999.999-99" required="false">
+                        <!--<f:validateRegex pattern="(^\d{3}\x2E\d{3}\x2E\d{3}\x2D\d{2}$)"/>-->
+                    </p:inputMask>
+                    <p:message for="cpf" showDetail="false" closable="true" />
 
-            <h:panelGroup styleClass="separator" layout="block"/>
+                    <p:outputLabel for="datanascimento" value="Data Nascimento" styleClass="ui-float-label" />
+                    <p:inputMask id="datanascimento" value="#{cadastroPessoaBean.pessoaSelecionada.dataNascimento}"
+                        requiredMessage="O campo Data Nascimento é obrigatório"
+                        validatorMessage="Data de nascimento inválida" mask="99/99/9999" required="false"
+                        converterMessage="A máscara de data deve ser dd/mm/yyyy">
+                        <f:convertDateTime pattern="dd/MM/yyyy" />
+                    </p:inputMask>
+                    <p:message for="datanascimento" showDetail="false" closable="true" />
+
+                    <p:outputLabel for="sexo" value="Sexo" />
+
+                    <p:selectOneRadio id="sexo" value="#{cadastroPessoaBean.pessoaSelecionada.sexo}"
+                        layout="pageDirection">
+                        <f:selectItems value="#{cadastroPessoaBean.sexos}" var="s" itemLabel="#{s.nome}"
+                            styleClass="sexo" />
+                    </p:selectOneRadio>
+
+                    <p:message for="sexo" showDetail="false" closable="true" />
+                </h:panelGrid>
+            </h:panelGroup>
+        </h:panelGroup>
+
+        <h:panelGrid columns="2" cellpadding="10">
+            <p:commandButton value="Salvar" action="#{cadastroPessoaBean.salvar()}" icon="pi pi-check" ajax="false" />
+            <p:commandButton value="Cancelar" icon="pi pi-undo" ajax="false" action="#{cadastroPessoaBean.cancelar()}"
+                immediate="true" />
+        </h:panelGrid>
+
+        <h:panelGroup styleClass="separator" layout="block" />
 
 
-            <p:dataTable var="p" value="#{cadastroPessoaBean.lista}" showGridlines="true">
-                <p:column headerText="Código">
-                    <h:outputText value="#{p.codigo}" />
-                </p:column>
-                
-                <p:column headerText="Nome">
-                    <h:outputText value="#{p.nome}" />
-                </p:column>
-                
-                <p:column headerText="Telefone">
-                    <h:outputText value="#{p.telefone}" />
-                </p:column>
+        <p:dataTable var="p" value="#{cadastroPessoaBean.lista}" showGridlines="true">
+            <p:column headerText="Código">
+                <h:outputText value="#{p.codigo}" />
+            </p:column>
 
-                <p:column headerText="Ações">
-                    <p:tooltip for="editar" value="Editar pessoa" position="bottom"/>
-                    <p:commandButton 
-                        id="editar" 
-                        icon="pi pi-pencil" 
-                        styleClass="rounded-button ui-button-flat" 
-                        ajax="false"
-                        action="#{cadastroPessoaBean.setPessoaSelecionada(p)}"
-                    /> 
+            <p:column headerText="Nome">
+                <h:outputText value="#{p.nome}" />
+            </p:column>
 
-                     <p:tooltip for="deletar" value="Deletar pessoa" position="bottom"/>
-                     <p:commandButton
-                        id="deletar" 
-                        icon="pi pi-times" 
-                        styleClass="rounded-button ui-button-flat delete-icon" 
-                        ajax="false"
-                        action="#{cadastroPessoaBean.excluirPessoa(p)}"
-                    />
-                </p:column>
+            <p:column headerText="Telefone">
+                <h:outputText value="#{p.telefone}" />
+            </p:column>
 
-            </p:dataTable>
-        </h:form>
-        <!--load custom css after primefaces!-->
-        <h:outputStylesheet library="css" name="pessoa.css"/>
-        <!--load primeflex!-->
-        <h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
-    </h:body>
+            <p:column headerText="Ações">
+                <p:tooltip for="editar" value="Editar pessoa" position="bottom" />
+                <p:commandButton id="editar" icon="pi pi-pencil" styleClass="rounded-button ui-button-flat" ajax="false"
+                    action="#{cadastroPessoaBean.setPessoaSelecionada(p)}" />
+
+                <p:tooltip for="deletar" value="Deletar pessoa" position="bottom" />
+                <p:commandButton id="deletar" icon="pi pi-times" styleClass="rounded-button ui-button-flat delete-icon"
+                    ajax="false" action="#{cadastroPessoaBean.excluirPessoa(p)}" />
+            </p:column>
+
+        </p:dataTable>
+    </h:form>
+    <!--load custom css after primefaces!-->
+    <h:outputStylesheet library="css" name="pessoa.css" />
+    <!--load primeflex!-->
+    <h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
+</h:body>
+
 </html>
-
