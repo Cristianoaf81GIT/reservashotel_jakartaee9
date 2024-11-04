@@ -3,7 +3,6 @@ package br.com.cristiano.reservashotel.beans;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import br.com.cristiano.reservashotel.enums.Sexo;
 import br.com.cristiano.reservashotel.models.Pessoa;
 import br.com.cristiano.reservashotel.models.PessoaFisica;
@@ -24,7 +23,7 @@ public class CadastroPessoaBean implements Serializable {
   private String tipoNovaPessoa;
 
   public CadastroPessoaBean() {
-    this.pessoaSelecionada = new PessoaFisica();
+    // this.pessoaSelecionada = new PessoaFisica();
     this.lista = new ArrayList<Pessoa>();
     for (int x = 0; x < 10; x++) {
       Pessoa p = (x % 2 == 0) ? new PessoaFisica() : new PessoaJuridica();
@@ -39,10 +38,12 @@ public class CadastroPessoaBean implements Serializable {
   public void criar() {
     FacesContext context = FacesContext.getCurrentInstance();
     if (tipoNovaPessoa == null) {
-      context.addMessage("messages",
-          new FacesMessage(FacesMessage.SEVERITY_WARN, "You need to specify person type!", ""));
+      context.addMessage("messages", new FacesMessage(FacesMessage.SEVERITY_WARN,
+          "Você precisa especificar o tipo da pessoa!", ""));
       return;
     }
+
+    System.out.println("tipo de pessoa " + tipoNovaPessoa);
 
     if (tipoNovaPessoa.equals("PF")) {
       pessoaSelecionada = new PessoaFisica();
@@ -50,7 +51,7 @@ public class CadastroPessoaBean implements Serializable {
       pessoaSelecionada = new PessoaJuridica();
     }
     context.addMessage("messages",
-        new FacesMessage(FacesMessage.SEVERITY_INFO, "Successfully created new person!", ""));
+        new FacesMessage(FacesMessage.SEVERITY_INFO, "Nova pessoa criada com sucesso!", ""));
 
   }
 
@@ -71,9 +72,6 @@ public class CadastroPessoaBean implements Serializable {
   }
 
   public void salvar() {
-    System.out.println("Nome: " + this.pessoaSelecionada.getNome());
-    System.out.println("Email: " + this.pessoaSelecionada.getEmail());
-    System.out.println("Telefone: " + this.pessoaSelecionada.getTelefone());
     if (this.pessoaSelecionada.getNome().length() > 0
         && !this.lista.contains(this.pessoaSelecionada)) {
       int nextId = this.lista.size();
@@ -82,9 +80,8 @@ public class CadastroPessoaBean implements Serializable {
       // this.pessoaSelecionada = new PessoaFisica();
     }
     FacesContext contexto = FacesContext.getCurrentInstance();
-    contexto.addMessage(
-        "messages",
-        new FacesMessage(FacesMessage.SEVERITY_INFO, "Edição efetuada com sucesso!", ""));
+    contexto.addMessage("messages",
+        new FacesMessage(FacesMessage.SEVERITY_INFO, "Edição/criação efetuada com sucesso!", ""));
   }
 
   public void excluirPessoa(Pessoa p) {
@@ -97,7 +94,8 @@ public class CadastroPessoaBean implements Serializable {
   }
 
   public String cancelar() {
-    // this.pessoaSelecionada = new PessoaFisica();
+    this.pessoaSelecionada = null;
+    this.tipoNovaPessoa = null;
     return "primeiro.jsf";
   }
 

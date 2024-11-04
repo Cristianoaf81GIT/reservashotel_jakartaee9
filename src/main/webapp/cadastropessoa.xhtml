@@ -51,6 +51,9 @@
         label {
             color: var(--blue-500) !important;
         }
+        .f-header {
+          color: var(--blue-500) !important;
+        }
     </style>
 </h:head>
 <h:body class="body">
@@ -58,11 +61,9 @@
 
     <h:form class="form" rendered="#{empty cadastroPessoaBean.pessoaSelecionada}">
         <h:panelGrid id="gridTipoPessoa" columns="2">
-            <f:facet name="header">Tipo pessoa</f:facet>
-            <!-- <p:selectOneMenu value="#{cadastroPessoaBean.tipoNovaPessoa}">
-                <f:selectItem itemLabel="Pessoa Física" itemValue="PF" />
-                <f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ" />
-            </p:selectOneMenu> -->
+            <f:facet name="header">
+            <h:outputText value="Tipo pessoa" styleClass="sexo"/>
+            </f:facet>
             <p:selectOneRadio value="#{cadastroPessoaBean.tipoNovaPessoa}">
                 <f:selectItem itemLabel="Pessoa Fisica" itemValue="PF" />
                 <f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ" />
@@ -80,8 +81,12 @@
             <p:autoUpdate />
         </p:messages>
         <h:panelGroup styleClass="grid border-round" layout="block">
+            
             <h:panelGroup layout="block" styleClass="col">
                 <h:panelGrid columns="3">
+                    <f:facet name="header">
+                      <h:outputText value="Dados Gerais" styleClass="f-header"/>
+                    </f:facet>
                     <p:outputLabel for="name" value="Nome:" styleClass="ui-float-label" />
                     <p:inputText id="name" value="#{cadastroPessoaBean.pessoaSelecionada.nome}" required="false"
                         requiredMessage="O nome é um campo obrigatório!" />
@@ -102,8 +107,11 @@
                 </h:panelGrid>
             </h:panelGroup>
 
-            <h:panelGroup id="painelPF" styleClass="col" layout="block">
+            <h:panelGroup id="painelPF" styleClass="col" layout="block" rendered="#{cadastroPessoaBean.pessoaFisicaSelecionada}">
                 <h:panelGrid columns="3">
+                    <f:facet name="header">
+                      <h:outputText value="Dados de pessoa física" styleClass="f-header"/>
+                    </f:facet>
                     <p:outputLabel for="cpf" value="Cpf" styleClass="ui-float-label" />
                     <p:inputMask id="cpf" value="#{cadastroPessoaBean.pessoaSelecionada.cpf}"
                         requiredMessage="O campo cpf é obrigatório!" validatorMessage="Cpf inválido!"
@@ -130,7 +138,41 @@
                     </p:selectOneRadio>
 
                     <p:message for="sexo" showDetail="false" closable="true" />
+                      </h:panelGrid>
+              </h:panelGroup>
+                
+              <h:panelGroup id="pessoaJuricaPainel" styleClass="col" layout="block" rendered="#{cadastroPessoaBean.pessoaJuridicaSelecionada}">
+                <h:panelGrid columns="3">
+                  <f:facet name="header">
+                    <h:outputText styleClass="sexo" value="Dados de Pessoa Jurídica"/>      
+                  </f:facet>
+
+                  <p:outputLabel for="cnpj" value="Cnpj" styleClass="ui-float-label"/>
+                  <p:inputMask 
+                    id="cnpj" 
+                    value="#{cadastroPessoaBean.pessoaSelecionada.cnpj}"
+                      requiredMessage="O campo Data Nascimento é obrigatório"
+                      validatorMessage="Data de nascimento inválida" mask="99.999.999/9999-99" required="false"
+                      converterMessage="A máscara de data deve ser 99.999.999/9999-99"
+                    >
+                    <f:validateRegex pattern="^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$"/>
+                  </p:inputMask>
+                  <p:message for="cnpj" showDetail="false" closable="true"/>
+
+                  <p:outputLabel for="razao" value="Razão social" styleClass="ui-float-label"/>
+                  <p:inputText id="razao" value="#{cadastroPessoaBean.pessoaSelecionada.razaoSocial}"/>
+                  <p:message for="razao" showDetail="false" closable="true"/>
+
+                  <p:outputLabel for="inscricaoEstadual" value="Inscrição Estadual"/>
+                  <p:inputText id="inscricaoEstadual" value="#{cadastroPessoaBean.pessoaSelecionada.inscricaoEstadual}"/>
+                  <p:message for="inscricaoEstadual" showDetail="false" closable="true"/>
+
+                  <p:outputLabel for="inscricaoMunicipal" value="Inscrição Municipal" styleClass="ui-float-label"/>
+                  <p:inputText id="inscricaoMunicipal" value="#{cadastroPessoaBean.pessoaSelecionada.inscricaoMunicipal}"/>
+                  <p:message for="inscricaoMunicipal" showDetail="false" closable="true"/>
+
                 </h:panelGrid>
+
             </h:panelGroup>
         </h:panelGroup>
 
@@ -145,15 +187,15 @@
 
         <p:dataTable var="p" value="#{cadastroPessoaBean.lista}" showGridlines="true">
             <p:column headerText="Código">
-                <h:outputText value="#{p.codigo}" />
+                <h:outputText value="#{p.codigo}" escape="true"/>
             </p:column>
 
             <p:column headerText="Nome">
-                <h:outputText value="#{p.nome}" />
+                <h:outputText value="#{p.nome}" escape="true"/>
             </p:column>
 
             <p:column headerText="Telefone">
-                <h:outputText value="#{p.telefone}" />
+                <h:outputText value="#{p.telefone}" escape="true"/>
             </p:column>
 
             <p:column headerText="Ações">
