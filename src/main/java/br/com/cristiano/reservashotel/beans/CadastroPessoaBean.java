@@ -43,8 +43,6 @@ public class CadastroPessoaBean implements Serializable {
       return;
     }
 
-    System.out.println("tipo de pessoa " + tipoNovaPessoa);
-
     if (tipoNovaPessoa.equals("PF")) {
       pessoaSelecionada = new PessoaFisica();
     } else if (tipoNovaPessoa.equals("PJ")) {
@@ -59,8 +57,14 @@ public class CadastroPessoaBean implements Serializable {
     return this.pessoaSelecionada;
   }
 
-  public void setPessoaSelecionada(Pessoa p) {
-    this.pessoaSelecionada = p;
+  public void setPessoaSelecionada(Object p) {
+    if (p instanceof PessoaFisica) {
+      this.pessoaSelecionada = (PessoaFisica) p;
+      this.setTipoNovaPessoa("PF");
+    } else {
+      this.pessoaSelecionada = (PessoaJuridica) p;
+      this.setTipoNovaPessoa("PJ");
+    }
   }
 
   public List<Pessoa> getLista() {
