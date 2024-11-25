@@ -54,11 +54,18 @@
         .f-header {
           color: var(--blue-500) !important;
         }
+        .language-choose-title {
+          color: var(--blue-500) !important;
+          font-size: 1rem;
+        }
     </style>
 </h:head>
 <h:body class="body">
     <!--<h:graphicImage name="especializa.jpg" library="images" styleClass="logo"/>-->
     <f:loadBundle var="mens" basename="br.com.cristiano.reservashotel.bundles.mensagens"/>
+    
+    <h:outputText value="#{mens.escolha}" styleClass="language-choose-title"/>
+
     <h:form class="form" rendered="#{empty cadastroPessoaBean.pessoaSelecionada}">
         <h:panelGrid id="gridTipoPessoa" columns="2">
             <f:facet name="header">
