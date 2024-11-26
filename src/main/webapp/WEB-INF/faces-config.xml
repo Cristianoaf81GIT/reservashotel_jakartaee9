@@ -5,6 +5,7 @@
               version="4.0">
     
   <application>
+    <!--configuracoes de localizacao da aplicacao-->
     <locale-config>
       <default-locale>pt_BR</default-locale>
       <supported-locale>de</supported-locale>
@@ -13,6 +14,13 @@
       <supported-locale>fr</supported-locale>
       <supported-locale>pt_BR</supported-locale>
     </locale-config>
+    
+    <!--carrega um recurso de traducao nas paginas!-->
+    <resource-bundle>
+      <base-name>br.com.cristiano.reservashotel.bundles.mensagens</base-name>
+      <var>mens</var> <!-- mens e uma variavel q fica disponivel para as paginas xhtml!-->
+    </resource-bundle>
+
   </application>    
 </faces-config>
 
