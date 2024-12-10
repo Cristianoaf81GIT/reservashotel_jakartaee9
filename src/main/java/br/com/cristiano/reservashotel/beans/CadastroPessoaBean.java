@@ -3,6 +3,8 @@ package br.com.cristiano.reservashotel.beans;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import br.com.cristiano.reservashotel.enums.Sexo;
 import br.com.cristiano.reservashotel.models.Pessoa;
 import br.com.cristiano.reservashotel.models.PessoaFisica;
@@ -91,9 +93,16 @@ public class CadastroPessoaBean implements Serializable {
   public void excluirPessoa(Pessoa p) {
     if (this.lista.contains(p)) {
       this.lista.remove(p);
-      this.pessoaSelecionada = new PessoaFisica();
+      this.pessoaSelecionada = p instanceof PessoaFisica ? new PessoaFisica() : new PessoaJuridica();
+      
+      Locale locale = FacesContext.getCurrentInstance().getExternalContext().getRequestLocale();
+      
+      String mensagem = ResourceBundle
+        .getBundle("br.com.cristiano.reservashotel.bundles.mensagens", locale)
+        .getString("excluida");
+
       FacesContext.getCurrentInstance().addMessage("messages",
-          new FacesMessage(FacesMessage.SEVERITY_INFO, "Pessoa removida com sucesso!", ""));
+          new FacesMessage(FacesMessage.SEVERITY_INFO, mensagem, ""));
     }
   }
 
