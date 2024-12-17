@@ -23,8 +23,10 @@ public class CadastroPessoaBean implements Serializable {
   private Pessoa pessoaSelecionada;
   private List<Pessoa> lista;
   private String tipoNovaPessoa;
+  private Locale locale;
 
   public CadastroPessoaBean() {
+    locale = FacesContext.getCurrentInstance().getExternalContext().getRequestLocale();
     // this.pessoaSelecionada = new PessoaFisica();
     this.lista = new ArrayList<Pessoa>();
     for (int x = 0; x < 10; x++) {
@@ -93,9 +95,7 @@ public class CadastroPessoaBean implements Serializable {
   public void excluirPessoa(Pessoa p) {
     if (this.lista.contains(p)) {
       this.lista.remove(p);
-      this.pessoaSelecionada = p instanceof PessoaFisica ? new PessoaFisica() : new PessoaJuridica();
-      
-      Locale locale = FacesContext.getCurrentInstance().getExternalContext().getRequestLocale();
+      this.pessoaSelecionada = p instanceof PessoaFisica ? new PessoaFisica() : new PessoaJuridica();      
       
       String mensagem = ResourceBundle
         .getBundle("br.com.cristiano.reservashotel.bundles.mensagens", locale)
