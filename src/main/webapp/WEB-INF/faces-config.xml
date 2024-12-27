@@ -20,6 +20,8 @@
       <base-name>br.com.cristiano.reservashotel.bundles.mensagens</base-name>
       <var>mens</var> <!-- mens e uma variavel q fica disponivel para as paginas xhtml!-->
     </resource-bundle>
+    
+    <!-- <message-bundle>br.com.cristiano.reservashotel.bundles.mensagenssistema</message-bundle> -->
 
   </application>    
 </faces-config>
